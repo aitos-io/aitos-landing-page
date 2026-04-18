@@ -332,7 +332,6 @@ function applyLang(lang) {
   try {
     const saved = localStorage.getItem('boat_lang');
     if (saved === 'en' || saved === 'zh') lang = saved;
-    else if ((navigator.language || '').toLowerCase().startsWith('zh')) lang = 'zh';
   } catch (e) {}
   applyLang(lang);
   const btn = document.getElementById('langToggle');
