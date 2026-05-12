@@ -139,6 +139,7 @@ const i18n = {
     'eco.1': 'Distributed renewable energy DePIN',
     'eco.2': 'Green-attested Bitcoin mining',
     'eco.3': 'Trust layer for autonomous systems',
+    'eco.4': 'Sign-only wallet — agents act, humans approve',
 
     'cta.t': 'Building the agent economy? Start at the trust layer.',
     'cta.d': 'Whether you ship firmware, robots, or LLM agents that need to act in the real world — we want to talk.',
@@ -294,6 +295,7 @@ const i18n = {
     'eco.1': '分布式可再生能源 DePIN',
     'eco.2': '绿色身份认证的比特币挖矿',
     'eco.3': '面向自主系统的信任层',
+    'eco.4': '只签名钱包，代理执行，人类审批',
 
     'cta.t': '在构建 Agent 经济？从信任层开始。',
     'cta.d': '无论你做的是固件、机器人，还是需要在现实世界行动的 LLM Agent——我们想聊聊。',
