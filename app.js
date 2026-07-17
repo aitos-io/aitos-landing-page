@@ -1,318 +1,266 @@
 // ============================================================
-// BoAT landing — interactions
+// aitos.io landing — i18n + interactions + canvas animations
 // ============================================================
 
 const i18n = {
   en: {
-    'brand.sub': 'by aitos.io',
-    'nav.why': 'Why Now',
-    'nav.stack': 'Trust Layer',
-    'nav.tech': 'Technology',
-    'nav.usecases': 'Use Cases',
-    'nav.builders': 'Builders',
-    'nav.partners': 'Partners',
-    'nav.docs': 'Docs',
+    'nav.why': 'Why',
+    'nav.thesis': 'Thesis',
+    'nav.loop': 'The Loop',
+    'nav.stack': 'Stack',
+    'nav.pai': 'Physical AI',
+    'nav.eco': 'Ecosystem',
+    'nav.cta': 'BUILD WITH BoAT',
 
-    'hero.eyebrow': 'The Embedded Trust Layer — evolved for the Agent era',
-    'hero.title1': 'Give every AI agent',
-    'hero.title2': 'a body, an identity, and a wallet.',
-    'hero.sub': 'BoAT is the embedded trust layer where autonomous AI agents meet the physical and financial world. We turn any machine — a bike, a battery, a vehicle, a humanoid — into a cryptographically-verifiable, self-paying, accountable actor.',
-    'hero.cta1': 'See the Stack',
-    'hero.cta2': 'Read the Docs →',
+    'hero.eyebrow': 'AI × IoT × Onchain Systems',
+    'hero.title': 'The Sovereign<br>Data OS for AI<br>and Things',
+    'hero.sub': '<strong>Data sovereignty infrastructure for the physical world.</strong> aitos.io makes physical-world data authentic, verifiable and privately usable — so its value can flow across machines, AI and the onchain economy.',
+    'hero.cta1': 'EXPLORE THE INFRASTRUCTURE',
+    'hero.cta2': 'BUILD WITH BoAT',
 
-    'hero.card1.t': 'Verifiable Identity',
-    'hero.card1.d': 'Agent-Bound Identity (ABI) rooted in hardware keys. Every agent has a DID that can be challenged, signed, and audited.',
-    'hero.card2.t': 'Autonomous Payment',
-    'hero.card2.d': 'Native alignment with x402 / AP2 and on-chain rails. Agents pay, get paid, and settle without a human in the loop.',
-    'hero.card3.t': 'Proof of Physical Action',
-    'hero.card3.d': 'Sensor data + hardware signatures + on-chain anchoring. Cryptographic evidence that an agent actually did the thing.',
+    'gap.label': 'The Gap',
+    'gap.title': 'The world has abundant data.<br><span class="mut">Very little of it is </span><span class="cy">sovereign</span><span class="mut">.</span>',
+    'gap.sub': 'Billions of devices, machines and AI agents digitize the physical world every second — energy, mobility, industry, the environment, human activity. Yet almost none of that data can be verified, owned, or fairly monetized.',
+    'gap.1.t': 'No proof of origin',
+    'gap.1.d': 'Which real device produced this data? Today, nothing can prove it.',
+    'gap.2.t': 'No proof of integrity',
+    'gap.2.d': 'Altered, duplicated, replayed — and no one can tell the difference.',
+    'gap.3.t': 'No control',
+    'gap.3.d': 'Owners cannot govern who accesses their data, or for what.',
+    'gap.4.t': 'No privacy',
+    'gap.4.d': 'Once shared, data escapes its owner — forever.',
+    'gap.5.t': 'No reward',
+    'gap.5.d': 'Value flows to platforms — not to the people and machines who contribute.',
+    'gap.kicker': 'Data is everywhere. <span class="ink">Trust, ownership and value flow are not.</span>',
 
-    'why.tag': 'Why Now',
-    'why.title': "The last mile of the LLM revolution isn't in the cloud.",
-    'why.sub': "Agents can think, plan, and call tools. What they can't do alone: prove who they are, pay for what they consume, and leave a trustworthy footprint in the physical world. BoAT has been quietly building that layer for 8 years — under a different name.",
+    'thesis.label': 'The Thesis',
+    'thesis.1.e': 'IoT — TRUSTED CONNECTION',
+    'thesis.1.t': 'IoT makes data<br><span class="cy">authentic.</span>',
+    'thesis.1.d': 'Hardware-rooted identity and cryptographic signatures prove where data comes from — the moment it is born.',
+    'thesis.2.e': 'BLOCKCHAIN — THE OPEN OPERATING SYSTEM FOR TRUST',
+    'thesis.2.t': 'Blockchain makes data<br><span class="cy">verifiable.</span>',
+    'thesis.2.d': 'Tamper-resistant provenance, ownership, authorization and settlement — a shared world computer no single party controls.',
+    'thesis.3.e': 'AI — VALUE EXTRACTION',
+    'thesis.3.t': 'AI makes data<br><span class="cy">valuable.</span>',
+    'thesis.3.d': 'Edge intelligence and privacy-preserving computation turn raw signals into decisions, services and economic value — without taking control away from the owner.',
+    'thesis.4.e': 'AITOS.IO — THE CLOSED LOOP',
+    'thesis.4.t': 'aitos.io makes that value <span class="am">flow</span> — while sovereignty stays with the owner.',
 
-    'why.t1.era': '2018 — 2023',
-    'why.t1.t': 'Machine Economy',
-    'why.t1.d': 'Devices as passive ledger nodes. BoAT gave IoT chips their first blockchain wallet. Partners: Telefónica, Qualcomm, Microsoft, Daimler, ARM, RISC-V.',
-    'why.t2.era': '2023 — 2025',
-    'why.t2.t': 'Physical AI Agents',
-    'why.t2.d': 'DePIN, smart fleets, VPPs. Machines start to act, schedule, and earn. Arkreen, GreenBTC.Club and TLAY prove the playbook at scale.',
-    'why.t3.era': '2026 →',
-    'why.t3.t': 'Agentic Machine Economy',
-    'why.t3.d': 'LLM-driven agents need bodies to act and trust to transact. BoAT becomes the identity, payment and proof layer for every agent — embedded or cloud-resident.',
+    'loop.label': 'The Loop',
+    'loop.title': 'From physical signal<br>to settled value.',
+    'loop.1.t': 'Sense',
+    'loop.1.d': 'IoT captures reality at the source.',
+    'loop.2.t': 'Prove',
+    'loop.2.d': 'Device identity signs every byte.',
+    'loop.3.t': 'Protect',
+    'loop.3.d': 'Sovereignty and privacy by design.',
+    'loop.4.t': 'Understand',
+    'loop.4.d': 'AI extracts intelligence in place.',
+    'loop.5.t': 'Exchange',
+    'loop.5.d': 'Programmable authorization and trade.',
+    'loop.6.t': 'Settle',
+    'loop.6.d': 'Value returns to its contributors.',
+    'loop.close': 'Move the <span class="am">value</span>, not the <span class="cy">data</span>.',
+    'loop.exp': 'The goal is not free-flowing raw data — it is a closed loop where data stays under its owner’s control while its value becomes verifiable, exchangeable and fairly distributed.',
 
-    'stack.tag': 'The Agentic Trust Layer',
-    'stack.title': 'Three things every AI agent is missing. We ship all three.',
-    'stack.sub': 'MCP gives agents tools. A2A gives them teammates. x402 gives them rails. BoAT gives them a body, a name, and a signature that regulators, counterparties, and insurers can actually trust.',
+    'name.label': 'The name is the thesis',
+    'name.ai.l': 'ARTIFICIAL INTELLIGENCE',
+    'name.ai.d': 'Intelligence and value extraction — turning trusted data into decisions and services.',
+    'name.t.l': 'THINGS · IoT',
+    'name.t.d': 'The trusted connection to the physical world — where authentic data is born.',
+    'name.os.l': 'THE BLOCKCHAIN OPERATING SYSTEM',
+    'name.os.d': 'An open, decentralized operating system for trust — state, identity, rights and settlement no single party controls.',
+    'name.io.l': 'INPUT / OUTPUT',
+    'name.io.d': 'The interface between the physical and digital worlds — in both directions.',
+    'name.kicker': '<span class="cy">AI understands.</span> <span class="ink">Things sense.</span> <span class="am">The blockchain OS verifies, coordinates and settles.</span>',
 
-    'stack.1.t': 'Agent-Bound Identity',
-    'stack.1.d': 'A DID rooted in hardware — whether the "hardware" is a secure element in a robot, a TEE in a server, or an eSIM in a meter. Every action is signed, challengeable, and revocable.',
-    'stack.1.f1': 'W3C DID compatible',
-    'stack.1.f2': 'Hardware-rooted keys',
-    'stack.1.f3': 'Per-agent, per-session, per-tool scopes',
+    'stack.label': 'The Stack',
+    'stack.title': 'One infrastructure.<br>Trust from silicon to settlement.',
+    'stack.boat.tag': 'DEVICE SIDE',
+    'stack.boat.tl': 'The Embedded Trust Runtime for Sovereign Data',
+    'stack.boat.d': 'Inside chips, sensors, machines and edge devices — so data is born trusted.',
+    'stack.boat.c1': 'Device identity',
+    'stack.boat.c2': 'Hardware keys',
+    'stack.boat.c3': 'Data signing',
+    'stack.boat.c4': 'Secure storage',
+    'stack.boat.c5': 'Privacy authorization',
+    'stack.boat.c6': 'Onchain proof',
+    'stack.boat.c7': 'Machine wallet & payment',
+    'stack.boat.f': '↳ Trust <span class="cy">at the source</span>',
+    'stack.tlay.tag': 'NETWORK SIDE',
+    'stack.tlay.tl': 'The Trust and Value Layer for Physical-World Data',
+    'stack.tlay.d': 'Where trusted data becomes rights, proofs, services and settled value.',
+    'stack.tlay.c1': 'Data verification',
+    'stack.tlay.c2': 'Data ownership',
+    'stack.tlay.c3': 'Proof of Physical Work',
+    'stack.tlay.c4': 'Programmable authorization',
+    'stack.tlay.c5': 'AI-agent access',
+    'stack.tlay.c6': 'Machine payments',
+    'stack.tlay.c7': 'Data assetization & settlement',
+    'stack.tlay.f': '↳ Trust and value <span class="am">across the network</span>',
+    'stack.bar': 'aitos.io <span class="ink">defines and builds</span> the sovereign data infrastructure beneath both.',
+    'stack.chain': 'SILICON → NETWORK → ECONOMY',
 
-    'stack.2.t': 'Agentic Wallet',
-    'stack.2.d': 'A native wallet the agent owns — not a credit card it borrows. Supports streaming micropayments, budget caps, policy guardrails, and multi-chain settlement out of the box.',
-    'stack.2.f1': 'x402 / AP2 ready',
-    'stack.2.f2': 'Programmable spend policies',
-    'stack.2.f3': 'Multi-chain, stablecoin-first',
+    'pai.label': 'First Application · Physical AI',
+    'pai.title': 'AI is leaving<br>the cloud.',
+    'pai.d1': 'When AI acts through robots, vehicles, energy assets and industrial machines, every decision depends on data that is real, unaltered and private.',
+    'pai.d2': 'Physical AI needs a sovereign data layer before it needs another model.',
+    'pai.kicker': 'The agentic machine economy is the first application<br>of sovereign data — <span class="am">not the whole story.</span>',
+    'pai.1.t': 'Machine Identity',
+    'pai.1.d': 'Prove who acted, and whose data it is.',
+    'pai.2.t': 'Trusted Data',
+    'pai.2.d': 'Prove the inputs AI relies on are real.',
+    'pai.3.t': 'Proof of Physical Action',
+    'pai.3.d': 'Prove what AI actually did in the real world.',
+    'pai.4.t': 'Machine Wallet',
+    'pai.4.d': 'Let data, services and machine work earn.',
+    'pai.5.t': 'Machine Payment',
+    'pai.5.d': 'Settle value automatically, machine to machine.',
 
-    'stack.3.badge': 'New',
-    'stack.3.t': 'Proof of Physical Action',
-    'stack.3.d': "The antidote to hallucination. Sensor readings, actuator commands, and timestamps are co-signed on-device and anchored on-chain — turning an agent's claim into verifiable physical evidence.",
-    'stack.3.f1': 'Sensor + key co-signature',
-    'stack.3.f2': 'Auditable action logs',
-    'stack.3.f3': 'Insurance-grade provenance',
+    'eco.label': 'Ecosystem',
+    'eco.title': 'Real networks,<br>already running on the thesis.',
+    'eco.sub': 'Eight years of embedded trust — <span class="ink">across telecom, silicon and automotive.</span>',
+    'eco.1.d': 'Distributed renewable energy DePIN',
+    'eco.2.d': 'Green-attested Bitcoin mining',
+    'eco.3.d': 'The trust and value layer for physical-world data',
+    'eco.4.d': 'Sign-only wallet — agents act, humans approve',
 
-    'tech.tag': 'Core Technology',
-    'tech.title': 'Eight years of embedded cryptography. Ready for the agent era.',
-    'tech.sub': 'The same open-source framework trusted by telecom, automotive, and silicon leaders — now re-aimed at the agentic stack.',
+    'cta.m1': 'Data stays <span class="cy">sovereign</span>.',
+    'cta.m2': 'Value moves <span class="am">freely</span>.',
+    'cta.d': 'From sensors to AI, from physical activity to the onchain economy — aitos.io enables data to be authenticated, protected, utilized and fairly monetized.',
 
-    'tech.1.t': 'Embedded C SDK',
-    'tech.1.d': "Runs on MCUs, modems and edge SoCs where Python can't go. Lightweight, open-source, production-proven.",
-    'tech.2.t': 'DID & Verifiable Credentials',
-    'tech.2.d': 'Decentralized identity for every agent, device, and tool call. Interoperable with emerging agent-id standards.',
-    'tech.3.t': 'Trusted Data On-Chain',
-    'tech.3.d': 'Integrity and traceability for every reading an agent relies on — or every claim it makes.',
-    'tech.4.t': 'Machine Payment',
-    'tech.4.d': 'Wallet primitives designed for devices and agents: low-power signing, streaming settlement, policy-bound spend.',
-    'tech.5.t': 'Secure Key Management',
-    'tech.5.d': 'TEE, SE and HSM integrations. Private keys never leave the silicon.',
-    'tech.6.t': 'Multi-chain Interop',
-    'tech.6.d': 'Neutral by design. Plug into Ethereum, Solana, Bitcoin L2s, and more without rewriting your firmware.',
-
-    'tech.phil.t': 'Open, neutral, silicon-agnostic.',
-    'tech.phil.d': "BoAT doesn't pick winners. Any chip, any chain, any agent framework. The trust layer should be as universal as TCP/IP.",
-    'tech.phil.c1': 'Multi-chip',
-    'tech.phil.c2': 'Multi-chain',
-    'tech.phil.c3': 'Open-source',
-    'tech.phil.c4': 'Standards-first',
-
-    'uc.tag': 'Agents in the Wild',
-    'uc.title': 'Seven places the agentic economy is already arriving.',
-    'uc.sub': "The use cases didn't change. The actors did. Every scene below now has an autonomous agent deciding, transacting, and being held accountable — because BoAT is inside.",
-
-    'uc.1.k': 'Mobility',
-    'uc.1.t': 'Self-Dispatching Bike Fleets',
-    'uc.1.d': 'Each bike is an agent with its own wallet. A fleet-level LLM scheduler negotiates rebalancing with the bikes themselves, no central operator required.',
-    'uc.2.k': 'Energy',
-    'uc.2.t': 'Battery & VPP Trading Agents',
-    'uc.2.d': 'Storage devices bid into energy markets autonomously. Revenue settles on-chain. Paired with Arkreen & GreenBTC for green-energy attestation.',
-    'uc.3.k': 'Automotive',
-    'uc.3.t': 'Mobility Agents in Every Car',
-    'uc.3.d': 'The vehicle pays for tolls, charging, parking, insurance — and produces a cryptographic trip log good enough for regulators.',
-    'uc.4.k': 'Solar / DePIN',
-    'uc.4.t': 'Autonomous Green Assets',
-    'uc.4.d': 'Distributed PV and storage operate, sell, and prove carbon credits as independent economic agents.',
-    'uc.5.k': 'Industry',
-    'uc.5.t': 'Self-Optimizing Factory Agents',
-    'uc.5.d': 'Machines procure consumables, negotiate with neighbors, and log every action in a tamper-evident audit trail.',
-    'uc.6.k': 'Home',
-    'uc.6.t': 'Home AI Butlers with Budgets',
-    'uc.6.d': 'A household agent with its own wallet, spend caps, and audit log. Subscriptions, energy, deliveries — all handled.',
-    'uc.7.k': 'New · Robotics',
-    'uc.7.t': 'Humanoid & Service Robots',
-    'uc.7.d': 'When a robot walks into a store or factory, who does it represent, who pays for what it consumes, and who is liable when it errs? BoAT is the answer shipped in firmware.',
-
-    'uc.vision.t': 'From a Trillion Machines to a Trillion Agents.',
-    'uc.vision.d': 'The original thesis scaled by device count. The new math scales by agents × devices × interactions per second. We are not rounding the corner — we are jumping to a new axis.',
-    'uc.vision.s1': 'connectable devices',
-    'uc.vision.s2': 'agent × device pairings',
-    'uc.vision.s3': 'autonomous economic activity',
-
-    'build.tag': 'For AI & Robotics Builders',
-    'build.title': "Plug BoAT into the stack you're already using.",
-    'build.sub': "Whether you're shipping a humanoid, a DePIN network, or an MCP-powered agent that needs to actually spend money — BoAT slots in under your framework of choice.",
-
-    'build.1.l': 'Agent Frameworks',
-    'build.1.d': 'Expose BoAT as an MCP tool server. Any agent gains a signed identity and a wallet in one call.',
-    'build.2.l': 'Payment Rails',
-    'build.2.d': 'Settle agent-to-agent payments, streaming micropayments, and per-tool usage — all with on-device policy enforcement.',
-    'build.3.l': 'Silicon & Edge',
-    'build.3.d': "An open C SDK that runs where Python and containers can't. Production-deployed across telecom and automotive.",
-
-    'part.tag': 'Trusted By',
-    'part.title': 'The partners that powered machine economy are powering the agent economy.',
-
-    'eco.t': 'Ecosystem',
-    'eco.d': 'Real networks already running on the thesis.',
-    'eco.1': 'Distributed renewable energy DePIN',
-    'eco.2': 'Green-attested Bitcoin mining',
-    'eco.3': 'Trust layer for autonomous systems',
-    'eco.4': 'Sign-only wallet — agents act, humans approve',
-
-    'cta.t': 'Building the agent economy? Start at the trust layer.',
-    'cta.d': 'Whether you ship firmware, robots, or LLM agents that need to act in the real world — we want to talk.',
-    'cta.b1': 'Contact Us',
-    'cta.b2': 'Explore on GitHub →',
-
-    'foot.about': 'The embedded trust layer for agentic machines. Identity, payment, and proof — shipped in firmware.',
-    'foot.product': 'Product',
-    'foot.l1': 'Trust Layer',
-    'foot.l2': 'Technology',
-    'foot.l3': 'For Builders',
-    'foot.resources': 'Resources',
-    'foot.company': 'Company',
-    'foot.rights': 'All rights reserved.',
-    'foot.privacy': 'Privacy',
-    'foot.terms': 'Terms',
-    'foot.cookie': 'Cookies'
+    'foot.tagline': 'DATA SOVEREIGNTY INFRASTRUCTURE FOR THE PHYSICAL WORLD',
+    'foot.top': '↑ TOP'
   },
 
   zh: {
-    'brand.sub': 'by aitos.io',
-    'nav.why': '为何此刻',
-    'nav.stack': '信任层',
-    'nav.tech': '核心技术',
-    'nav.usecases': '应用场景',
-    'nav.builders': '开发者',
-    'nav.partners': '合作伙伴',
-    'nav.docs': '文档',
+    'nav.why': '为什么',
+    'nav.thesis': '核心论点',
+    'nav.loop': '价值闭环',
+    'nav.stack': '技术栈',
+    'nav.pai': 'Physical AI',
+    'nav.eco': '生态',
+    'nav.cta': '用 BoAT 构建',
 
-    'hero.eyebrow': '嵌入式信任层 · 面向 Agent 时代重构',
-    'hero.title1': '给每一个 AI Agent',
-    'hero.title2': '一副身体、一个身份、一张钱包。',
-    'hero.sub': 'BoAT 是让自主 AI Agent 在物理与金融世界落地的嵌入式信任层。一辆单车、一块电池、一辆汽车、一台人形机器人——都能成为可被密码学验证、能够自主支付、可被问责的经济主体。',
-    'hero.cta1': '查看架构',
-    'hero.cta2': '阅读文档 →',
+    'hero.eyebrow': 'AI × IoT × 链上系统',
+    'hero.title': '为 AI 与万物打造的<br>主权数据操作系统',
+    'hero.sub': '<strong>面向物理世界的数据主权基础设施。</strong>aitos.io 让物理世界的数据真实可信、可被验证、可在隐私保护下使用——让数据的价值在机器、AI 与链上经济之间自由流动。',
+    'hero.cta1': '探索基础设施',
+    'hero.cta2': '用 BoAT 构建',
 
-    'hero.card1.t': '可验证身份',
-    'hero.card1.d': '根植于硬件密钥的 Agent-Bound Identity（ABI）。每个 Agent 都拥有可被挑战、可签名、可审计的 DID。',
-    'hero.card2.t': '自主支付',
-    'hero.card2.d': '原生对齐 x402 / AP2 与链上清算。Agent 自己付钱、自己收钱、自己结算——人类不在回路中。',
-    'hero.card3.t': '物理行为证明',
-    'hero.card3.d': '传感器数据 + 硬件签名 + 链上锚定。把 Agent 的"声称"变成可验证的物理证据。',
+    'gap.label': '差距所在',
+    'gap.title': '世界上数据无处不在。<br><span class="mut">但称得上</span><span class="cy">主权数据</span><span class="mut">的，寥寥无几。</span>',
+    'gap.sub': '每一秒，数十亿台设备、机器与 AI 智能体都在把物理世界数字化——能源、出行、工业、环境、人类活动。然而这些数据几乎都无法被验证、被拥有、或被公平地变现。',
+    'gap.1.t': '无法证明来源',
+    'gap.1.d': '这条数据究竟出自哪台真实设备？今天没有任何机制能证明。',
+    'gap.2.t': '无法证明完整性',
+    'gap.2.d': '被篡改、被复制、被重放——没有人能分辨真假。',
+    'gap.3.t': '无法控制',
+    'gap.3.d': '数据的主人无法决定谁能访问自己的数据、用于什么。',
+    'gap.4.t': '没有隐私',
+    'gap.4.d': '数据一旦共享，就永远脱离了主人的掌控。',
+    'gap.5.t': '没有回报',
+    'gap.5.d': '价值流向平台，而不是贡献数据的人和机器。',
+    'gap.kicker': '数据无处不在。<span class="ink">但信任、所有权与价值流动并非如此。</span>',
 
-    'why.tag': '为何此刻',
-    'why.title': 'LLM 革命的最后一公里，不在云端。',
-    'why.sub': 'Agent 能思考、规划、调用工具，但它们做不到：证明自己是谁、为消耗的资源付费、在现实世界留下可信的足迹。BoAT 已经在这一层默默耕耘 8 年——只是当年的名字不叫 Agent。',
+    'thesis.label': '核心论点',
+    'thesis.1.e': 'IoT — 可信连接',
+    'thesis.1.t': 'IoT 让数据<br><span class="cy">真实可信。</span>',
+    'thesis.1.d': '硬件根植的身份与加密签名，在数据诞生的那一刻就证明它来自哪里。',
+    'thesis.2.e': '区块链 — 开放的信任操作系统',
+    'thesis.2.t': '区块链让数据<br><span class="cy">可被验证。</span>',
+    'thesis.2.d': '防篡改的溯源、所有权、授权与结算——一台不受任何单一方控制的共享世界计算机。',
+    'thesis.3.e': 'AI — 价值提取',
+    'thesis.3.t': 'AI 让数据<br><span class="cy">产生价值。</span>',
+    'thesis.3.d': '边缘智能与隐私计算把原始信号变成决策、服务与经济价值——而控制权始终属于数据的主人。',
+    'thesis.4.e': 'AITOS.IO — 闭环',
+    'thesis.4.t': 'aitos.io 让这些价值<span class="am">流动</span>起来——而数据主权始终留在主人手中。',
 
-    'why.t1.era': '2018 — 2023',
-    'why.t1.t': '机器经济',
-    'why.t1.d': '设备作为被动的账本节点。BoAT 让 IoT 芯片第一次拥有区块链钱包。合作伙伴：Telefónica、Qualcomm、Microsoft、Daimler、ARM、RISC-V。',
-    'why.t2.era': '2023 — 2025',
-    'why.t2.t': '物理 AI Agent',
-    'why.t2.d': 'DePIN、智能车队、虚拟电厂。机器开始行动、调度、获利。Arkreen、GreenBTC.Club、TLAY 在规模化场景中验证了这套方法论。',
-    'why.t3.era': '2026 →',
-    'why.t3.t': 'Agentic 机器经济',
-    'why.t3.d': 'LLM 驱动的 Agent 需要身体来行动，需要信任来交易。BoAT 成为每一个 Agent（嵌入式或云端）的身份、支付与证明层。',
+    'loop.label': '价值闭环',
+    'loop.title': '从物理信号<br>到结算的价值。',
+    'loop.1.t': '感知',
+    'loop.1.d': 'IoT 在源头捕捉真实世界。',
+    'loop.2.t': '证明',
+    'loop.2.d': '设备身份为每个字节签名。',
+    'loop.3.t': '守护',
+    'loop.3.d': '主权与隐私，从设计之初就内建。',
+    'loop.4.t': '理解',
+    'loop.4.d': 'AI 就地提取智能。',
+    'loop.5.t': '交换',
+    'loop.5.d': '可编程的授权与交易。',
+    'loop.6.t': '结算',
+    'loop.6.d': '价值回到贡献者手中。',
+    'loop.close': '流动的是<span class="am">价值</span>，而非<span class="cy">数据</span>。',
+    'loop.exp': '我们的目标不是让原始数据自由流通，而是一个闭环：数据始终在主人的掌控之下，而它的价值变得可验证、可交换、并被公平分配。',
 
-    'stack.tag': 'Agentic 信任层',
-    'stack.title': '每一个 AI Agent 都缺的三样东西，我们全都交付。',
-    'stack.sub': 'MCP 给 Agent 工具，A2A 给它队友，x402 给它支付轨道。BoAT 给它一副身体、一个名字、一个能让监管方、交易对手和保险公司都信的签名。',
+    'name.label': '名字即论点',
+    'name.ai.l': '人工智能',
+    'name.ai.d': '智能与价值提取——把可信数据变成决策与服务。',
+    'name.t.l': '万物 · IoT',
+    'name.t.d': '通向物理世界的可信连接——真实数据的诞生之地。',
+    'name.os.l': '区块链操作系统',
+    'name.os.d': '一个开放、去中心化的信任操作系统——状态、身份、权利与结算不受任何单一方控制。',
+    'name.io.l': '输入 / 输出',
+    'name.io.d': '物理世界与数字世界之间的双向接口。',
+    'name.kicker': '<span class="cy">AI 负责理解。</span><span class="ink">万物负责感知。</span><span class="am">区块链操作系统负责验证、协调与结算。</span>',
 
-    'stack.1.t': 'Agent-Bound Identity',
-    'stack.1.d': '根植于硬件的 DID——无论硬件是机器人里的安全元件、服务器里的 TEE、还是电表里的 eSIM。每一次行动都可签名、可挑战、可撤销。',
-    'stack.1.f1': '兼容 W3C DID',
-    'stack.1.f2': '硬件根密钥',
-    'stack.1.f3': '按 Agent / 会话 / 工具粒度授权',
+    'stack.label': '技术栈',
+    'stack.title': '一套基础设施。<br>信任从芯片直达结算。',
+    'stack.boat.tag': '设备侧',
+    'stack.boat.tl': '主权数据的嵌入式可信运行时',
+    'stack.boat.d': '运行在芯片、传感器、机器与边缘设备之内——让数据在诞生时就可信。',
+    'stack.boat.c1': '设备身份',
+    'stack.boat.c2': '硬件密钥',
+    'stack.boat.c3': '数据签名',
+    'stack.boat.c4': '安全存储',
+    'stack.boat.c5': '隐私授权',
+    'stack.boat.c6': '链上存证',
+    'stack.boat.c7': '机器钱包与支付',
+    'stack.boat.f': '↳ 信任<span class="cy">始于源头</span>',
+    'stack.tlay.tag': '网络侧',
+    'stack.tlay.tl': '物理世界数据的信任与价值层',
+    'stack.tlay.d': '在这里，可信数据变成权利、证明、服务与结算后的价值。',
+    'stack.tlay.c1': '数据验证',
+    'stack.tlay.c2': '数据确权',
+    'stack.tlay.c3': '物理工作量证明',
+    'stack.tlay.c4': '可编程授权',
+    'stack.tlay.c5': 'AI 智能体接入',
+    'stack.tlay.c6': '机器支付',
+    'stack.tlay.c7': '数据资产化与结算',
+    'stack.tlay.f': '↳ 信任与价值<span class="am">贯通全网</span>',
+    'stack.bar': 'aitos.io <span class="ink">定义并构建</span>两者之下的主权数据基础设施。',
+    'stack.chain': '芯片 → 网络 → 经济',
 
-    'stack.2.t': 'Agentic Wallet',
-    'stack.2.d': 'Agent 真正拥有的钱包，而不是借用的信用卡。开箱支持流式微支付、预算上限、策略护栏和多链清算。',
-    'stack.2.f1': '原生支持 x402 / AP2',
-    'stack.2.f2': '可编程消费策略',
-    'stack.2.f3': '多链，以稳定币优先',
+    'pai.label': '首个应用 · Physical AI',
+    'pai.title': 'AI 正在<br>离开云端。',
+    'pai.d1': '当 AI 通过机器人、车辆、能源资产与工业机器采取行动时，每一个决策都依赖真实、未被篡改且受隐私保护的数据。',
+    'pai.d2': '在需要下一个模型之前，Physical AI 更需要一层主权数据。',
+    'pai.kicker': '智能体机器经济是主权数据的第一个应用<br>——<span class="am">但远不是全部。</span>',
+    'pai.1.t': '机器身份',
+    'pai.1.d': '证明是谁在行动，数据属于谁。',
+    'pai.2.t': '可信数据',
+    'pai.2.d': '证明 AI 所依赖的输入真实可信。',
+    'pai.3.t': '物理行为证明',
+    'pai.3.d': '证明 AI 在真实世界里到底做了什么。',
+    'pai.4.t': '机器钱包',
+    'pai.4.d': '让数据、服务与机器劳动获得收益。',
+    'pai.5.t': '机器支付',
+    'pai.5.d': '价值在机器与机器之间自动结算。',
 
-    'stack.3.badge': 'New',
-    'stack.3.t': '物理行为证明（PoPA）',
-    'stack.3.d': '幻觉时代的解药。传感器读数、执行器指令、时间戳在设备上联合签名、链上锚定——把 Agent 的"声称"变成可验证的物理证据。',
-    'stack.3.f1': '传感器 + 密钥联合签名',
-    'stack.3.f2': '可审计的行为日志',
-    'stack.3.f3': '达到保险级证据标准',
+    'eco.label': '生态',
+    'eco.title': '真实运行的网络，<br>是这套论点最好的注脚。',
+    'eco.sub': '八年嵌入式信任积累——<span class="ink">横跨电信、芯片与汽车。</span>',
+    'eco.1.d': '分布式可再生能源 DePIN',
+    'eco.2.d': '绿色认证的比特币挖矿',
+    'eco.3.d': '物理世界数据的信任与价值层',
+    'eco.4.d': '只签名钱包——智能体执行，人类审批',
 
-    'tech.tag': '核心技术',
-    'tech.title': '八年嵌入式密码学积累，已为 Agent 时代就绪。',
-    'tech.sub': '同一套被电信、汽车、芯片巨头信赖的开源框架，现在重新瞄准 Agentic 技术栈。',
+    'cta.m1': '数据<span class="cy">主权不移</span>。',
+    'cta.m2': '价值<span class="am">自由流动</span>。',
+    'cta.d': '从传感器到 AI，从物理世界的活动到链上经济——aitos.io 让数据可被认证、被守护、被利用，并被公平地变现。',
 
-    'tech.1.t': '嵌入式 C SDK',
-    'tech.1.d': '运行在 Python 去不了的 MCU、基带和边缘 SoC 上。轻量、开源、久经生产考验。',
-    'tech.2.t': 'DID 与可验证凭证',
-    'tech.2.d': '面向每一个 Agent、每一台设备、每一次工具调用的去中心化身份。与新兴 agent-id 标准互通。',
-    'tech.3.t': '可信数据上链',
-    'tech.3.d': 'Agent 依赖的每一条读数、发出的每一个声明，都具备完整性与可追溯性。',
-    'tech.4.t': '机器支付',
-    'tech.4.d': '面向设备与 Agent 的钱包原语：低功耗签名、流式清算、策略受限消费。',
-    'tech.5.t': '安全密钥管理',
-    'tech.5.d': '集成 TEE / SE / HSM。私钥永远不离开硅片。',
-    'tech.6.t': '多链互操作',
-    'tech.6.d': '中立设计。接入 Ethereum、Solana、Bitcoin L2 及更多——固件不需要重写。',
-
-    'tech.phil.t': '开放、中立、芯片无关。',
-    'tech.phil.d': 'BoAT 不站队。任何芯片、任何链、任何 Agent 框架都能接入。信任层应该像 TCP/IP 一样通用。',
-    'tech.phil.c1': '多芯片',
-    'tech.phil.c2': '多链',
-    'tech.phil.c3': '开源',
-    'tech.phil.c4': '标准优先',
-
-    'uc.tag': '荒野中的 Agent',
-    'uc.title': 'Agentic 经济正在七个地方率先发生。',
-    'uc.sub': '场景没变，主角换了。每一幕里，都是一个自主 Agent 在决策、在交易、在被问责——因为 BoAT 就在里面。',
-
-    'uc.1.k': '出行',
-    'uc.1.t': '自我调度的单车舰队',
-    'uc.1.d': '每辆单车都是拥有自己钱包的 Agent。舰队级 LLM 调度器直接与单车协商再平衡——不需要中心化运营者。',
-    'uc.2.k': '能源',
-    'uc.2.t': '电池与 VPP 交易 Agent',
-    'uc.2.d': '储能设备自主参与电力市场竞价，收益链上清算。与 Arkreen、GreenBTC 配合实现绿电身份证明。',
-    'uc.3.k': '汽车',
-    'uc.3.t': '每辆车里一个 Mobility Agent',
-    'uc.3.d': '车辆自付过路费、充电、停车、保险，并产出足以交给监管的密码学级行程日志。',
-    'uc.4.k': '太阳能 / DePIN',
-    'uc.4.t': '自主运营的绿色资产',
-    'uc.4.d': '分布式光伏与储能作为独立经济主体，自主运营、出售电力、证明碳积分。',
-    'uc.5.k': '工业',
-    'uc.5.t': '自优化的工厂 Agent',
-    'uc.5.d': '设备自主采购耗材、与相邻机器协商，并把每一次行动记入防篡改的审计轨迹。',
-    'uc.6.k': '家居',
-    'uc.6.t': '带预算的家庭 AI 管家',
-    'uc.6.d': '拥有自己钱包、消费上限和审计日志的家庭 Agent。订阅、能源、配送——全部自主打理。',
-    'uc.7.k': '新 · 机器人',
-    'uc.7.t': '人形与服务机器人',
-    'uc.7.d': '当一台机器人走进商店或工厂——它代表谁？谁为它的消费付费？它出错时谁负责？BoAT 是烧在固件里的答案。',
-
-    'uc.vision.t': '从万亿机器，到万亿 Agent。',
-    'uc.vision.d': '旧论点以设备数量计算规模。新公式是 Agent × 设备 × 每秒交互次数。这不是顺势增长——是跳到了新坐标轴。',
-    'uc.vision.s1': '可联网设备',
-    'uc.vision.s2': 'Agent × 设备 组合',
-    'uc.vision.s3': '自主经济活动',
-
-    'build.tag': '面向 AI 与机器人开发者',
-    'build.title': '把 BoAT 插进你已经在用的技术栈。',
-    'build.sub': '无论你在做人形机器人、DePIN 网络，还是一个需要真的花钱的 MCP Agent——BoAT 都能嵌入你选择的框架之下。',
-
-    'build.1.l': 'Agent 框架',
-    'build.1.d': '把 BoAT 暴露为 MCP 工具服务器，任何 Agent 一次调用即可获得签名身份与钱包。',
-    'build.2.l': '支付轨道',
-    'build.2.d': '结算 Agent 之间的支付、流式微支付、按工具计费的消费——全部附带设备端策略执行。',
-    'build.3.l': '芯片与边缘',
-    'build.3.d': '一个能运行在 Python 与容器都去不了的地方的开源 C SDK，已在电信与汽车行业规模部署。',
-
-    'part.tag': '行业领导者的信任之选',
-    'part.title': '支撑机器经济的合作伙伴，正在支撑 Agent 经济。',
-
-    'eco.t': '生态系统',
-    'eco.d': '真实跑起来的网络，是论点最好的注脚。',
-    'eco.1': '分布式可再生能源 DePIN',
-    'eco.2': '绿色身份认证的比特币挖矿',
-    'eco.3': '面向自主系统的信任层',
-    'eco.4': '只签名钱包，代理执行，人类审批',
-
-    'cta.t': '在构建 Agent 经济？从信任层开始。',
-    'cta.d': '无论你做的是固件、机器人，还是需要在现实世界行动的 LLM Agent——我们想聊聊。',
-    'cta.b1': '联系我们',
-    'cta.b2': '探索 GitHub →',
-
-    'foot.about': '面向 Agentic 机器的嵌入式信任层。身份、支付、证明——烧在固件里。',
-    'foot.product': '产品',
-    'foot.l1': '信任层',
-    'foot.l2': '技术',
-    'foot.l3': '开发者',
-    'foot.resources': '资源',
-    'foot.company': '关于',
-    'foot.rights': '保留所有权利。',
-    'foot.privacy': '隐私政策',
-    'foot.terms': '服务条款',
-    'foot.cookie': 'Cookies'
+    'foot.tagline': '面向物理世界的数据主权基础设施',
+    'foot.top': '↑ 回到顶部'
   }
 };
 
@@ -324,15 +272,19 @@ function applyLang(lang) {
     const key = el.getAttribute('data-i18n');
     if (dict[key] !== undefined) el.textContent = dict[key];
   });
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const key = el.getAttribute('data-i18n-html');
+    if (dict[key] !== undefined) el.innerHTML = dict[key];
+  });
   const toggle = document.getElementById('langToggle');
   if (toggle) toggle.textContent = lang === 'zh' ? '中 / EN' : 'EN / 中';
-  try { localStorage.setItem('boat_lang', lang); } catch (e) {}
+  try { localStorage.setItem('aitos_lang', lang); } catch (e) {}
 }
 
 (function initLang() {
   let lang = 'en';
   try {
-    const saved = localStorage.getItem('boat_lang');
+    const saved = localStorage.getItem('aitos_lang') || localStorage.getItem('boat_lang');
     if (saved === 'en' || saved === 'zh') lang = saved;
   } catch (e) {}
   applyLang(lang);
@@ -345,30 +297,226 @@ function applyLang(lang) {
   }
 })();
 
-// ---------- nav scrolled state ----------
-const nav = document.querySelector('.nav');
-function onScroll() {
-  if (!nav) return;
-  if (window.scrollY > 12) nav.classList.add('scrolled');
-  else nav.classList.remove('scrolled');
+// ---------- helpers ----------
+function hexToRgb(h) {
+  const m = h.replace('#', '');
+  return [parseInt(m.slice(0, 2), 16), parseInt(m.slice(2, 4), 16), parseInt(m.slice(4, 6), 16)];
 }
-window.addEventListener('scroll', onScroll, { passive: true });
-onScroll();
+const C_DATA = hexToRgb('5ce1ff');
+const C_VALUE = hexToRgb('ffb454');
 
-// ---------- reveal on scroll ----------
-const revealSelectors = '.card, .tl-step, .stack-card, .tech-card, .uc-card, .builder-card, .partner, .eco-card, .philosophy, .vision, .code-block, .section-head';
-document.querySelectorAll(revealSelectors).forEach(el => el.classList.add('reveal'));
+function motionFactor() {
+  return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0.35 : 1;
+}
 
-if ('IntersectionObserver' in window) {
+// ---------- year ----------
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+// ---------- nav chrome ----------
+const nav = document.getElementById('nav');
+
+// ---------- scroll reveal (staggered by data-reveal index) ----------
+(function setupReveals() {
+  const els = Array.from(document.querySelectorAll('[data-reveal]'));
+  const vh = window.innerHeight;
+  const below = els.filter(el => el.getBoundingClientRect().top > vh * 0.88);
+  below.forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(26px)'; });
+  if (!('IntersectionObserver' in window)) {
+    below.forEach(el => { el.style.opacity = '1'; el.style.transform = 'none'; });
+    return;
+  }
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('in');
-        io.unobserve(e.target);
-      }
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      const idx = parseInt(el.getAttribute('data-reveal') || '0', 10);
+      el.style.transition = `opacity 0.85s cubic-bezier(.2,.7,.2,1) ${idx * 0.08}s, transform 0.85s cubic-bezier(.2,.7,.2,1) ${idx * 0.08}s`;
+      el.style.opacity = '1';
+      el.style.transform = 'translateY(0)';
+      io.unobserve(el);
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-} else {
-  document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
-}
+  }, { threshold: 0.12 });
+  below.forEach(el => io.observe(el));
+})();
+
+// ---------- thesis sticky narrative + nav scrolled state ----------
+(function setupScroll() {
+  const thesisEl = document.getElementById('thesis');
+  const statements = Array.from(document.querySelectorAll('[data-thesis]'));
+  const ticks = Array.from(document.querySelectorAll('[data-tick]'));
+  let activeThesis = -1;
+
+  function onScroll() {
+    if (nav) nav.classList.toggle('scrolled', window.scrollY > 40);
+
+    if (thesisEl && statements.length) {
+      const rect = thesisEl.getBoundingClientRect();
+      const total = rect.height - window.innerHeight;
+      const prog = Math.min(1, Math.max(0, -rect.top / Math.max(1, total)));
+      const idx = Math.min(statements.length - 1, Math.floor(prog * statements.length));
+      if (idx !== activeThesis) {
+        activeThesis = idx;
+        statements.forEach((el, i) => {
+          el.classList.toggle('active', i === idx);
+          el.classList.toggle('passed', i < idx);
+        });
+        ticks.forEach((el, i) => {
+          el.classList.toggle('active', i === idx);
+          el.classList.toggle('last', i === ticks.length - 1);
+        });
+      }
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+
+// ---------- canvas animations ----------
+(function setupCanvases() {
+  const heroCanvas = document.getElementById('heroCanvas');
+  const loopCanvas = document.getElementById('loopCanvas');
+  if (!heroCanvas || !loopCanvas || !heroCanvas.getContext) return;
+
+  let heroVisible = true;
+  let loopVisible = false;
+  let t = 0;
+  const heroParticles = [];
+  const loopParticles = [];
+
+  function sizeCanvases() {
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    [heroCanvas, loopCanvas].forEach(c => {
+      const w = c.offsetWidth, h = c.offsetHeight;
+      if (c.width !== Math.round(w * dpr)) {
+        c.width = Math.round(w * dpr);
+        c.height = Math.round(h * dpr);
+      }
+      c.getContext('2d').setTransform(dpr, 0, 0, dpr, 0, 0);
+    });
+  }
+
+  function spawnHero(anywhere) {
+    const w = heroCanvas.offsetWidth || 1400;
+    const h = heroCanvas.offsetHeight || 800;
+    return {
+      x: anywhere ? Math.random() * w : -8,
+      y: Math.random() * h,
+      lane: Math.floor(Math.random() * 30),
+      sp: 0.5 + Math.random() * 1.3,
+      isValue: Math.random() < 0.15,
+      jit: Math.random() * Math.PI * 2,
+      sz: 1 + Math.random() * 1.6
+    };
+  }
+
+  sizeCanvases();
+  const mf0 = motionFactor();
+  const heroN = Math.round(340 * (mf0 < 1 ? 0.45 : 1));
+  for (let i = 0; i < heroN; i++) heroParticles.push(spawnHero(true));
+  for (let i = 0; i < 80; i++) {
+    loopParticles.push({
+      x: Math.random(),
+      sp: 0.0009 + Math.random() * 0.0022,
+      off: Math.random() * Math.PI * 2,
+      amp: 5 + Math.random() * 16
+    });
+  }
+
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => entries.forEach(e => {
+      if (e.target === heroCanvas) heroVisible = e.isIntersecting;
+      if (e.target === loopCanvas) loopVisible = e.isIntersecting;
+    }), { threshold: 0.02 });
+    io.observe(heroCanvas);
+    io.observe(loopCanvas);
+  } else {
+    loopVisible = true;
+  }
+
+  window.addEventListener('resize', sizeCanvases);
+
+  function drawHero(mf) {
+    const ctx = heroCanvas.getContext('2d');
+    const w = heroCanvas.offsetWidth, h = heroCanvas.offsetHeight;
+    const d = C_DATA, v = C_VALUE;
+    ctx.fillStyle = 'rgba(5,7,13,0.16)';
+    ctx.fillRect(0, 0, w, h);
+    const planeX = w * 0.46;
+    // verification plane
+    const pa = 0.35 + 0.2 * Math.sin(t * 1.4);
+    const grad = ctx.createLinearGradient(0, 0, 0, h);
+    grad.addColorStop(0, `rgba(${d[0]},${d[1]},${d[2]},0)`);
+    grad.addColorStop(0.5, `rgba(${d[0]},${d[1]},${d[2]},${pa})`);
+    grad.addColorStop(1, `rgba(${d[0]},${d[1]},${d[2]},0)`);
+    ctx.fillStyle = grad;
+    ctx.fillRect(planeX - 0.6, 0, 1.2, h);
+    const laneH = h / 31;
+    for (const p of heroParticles) {
+      if (p.x < planeX) {
+        p.x += p.sp * 0.9 * mf;
+        p.y += Math.sin(t * 2 + p.jit) * 0.45 * mf;
+        ctx.fillStyle = 'rgba(140,155,175,0.32)';
+      } else {
+        p.x += p.sp * 1.7 * mf;
+        const ty = (p.lane + 0.5) * laneH;
+        p.y += (ty - p.y) * 0.06;
+        if (p.isValue && p.x > w * 0.72) {
+          p.y -= 0.35 * mf;
+          ctx.fillStyle = `rgba(${v[0]},${v[1]},${v[2]},0.85)`;
+        } else {
+          ctx.fillStyle = `rgba(${d[0]},${d[1]},${d[2]},0.6)`;
+        }
+      }
+      ctx.fillRect(p.x, p.y, p.sz + (p.x > planeX ? 1.4 : 0), p.sz * 0.55 + 0.4);
+      if (p.x > w + 10 || p.y < -12) {
+        const np = spawnHero(false);
+        p.x = np.x; p.y = np.y; p.lane = np.lane; p.sp = np.sp;
+        p.isValue = np.isValue; p.jit = np.jit; p.sz = np.sz;
+      }
+    }
+  }
+
+  function drawLoop(mf) {
+    const ctx = loopCanvas.getContext('2d');
+    const w = loopCanvas.offsetWidth, h = loopCanvas.offsetHeight;
+    const d = C_DATA, v = C_VALUE;
+    ctx.clearRect(0, 0, w, h);
+    const y = h * 0.5;
+    ctx.strokeStyle = 'rgba(148,163,184,0.18)';
+    ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke();
+    for (let i = 0; i < 6; i++) {
+      const nx = ((i + 0.5) / 6) * w;
+      const rgb = i >= 4 ? v : d;
+      const pulse = 0.5 + 0.5 * Math.sin(t * 2 - i * 0.9);
+      ctx.beginPath();
+      ctx.arc(nx, y, 14 + pulse * 5, 0, Math.PI * 2);
+      ctx.strokeStyle = `rgba(${rgb[0]},${rgb[1]},${rgb[2]},${0.14 + pulse * 0.18})`;
+      ctx.lineWidth = 1;
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(nx, y, 4.5, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${rgb[0]},${rgb[1]},${rgb[2]},0.95)`;
+      ctx.fill();
+    }
+    for (const p of loopParticles) {
+      p.x += p.sp * mf;
+      if (p.x > 1.02) p.x = -0.02;
+      const px = p.x * w;
+      const py = y + Math.sin(p.x * 22 + p.off) * p.amp * 0.35;
+      const rgb = p.x > 4.02 / 6 ? v : d;
+      ctx.fillStyle = `rgba(${rgb[0]},${rgb[1]},${rgb[2]},0.75)`;
+      ctx.fillRect(px, py, 3, 1.4);
+    }
+  }
+
+  function frame() {
+    t += 0.016;
+    const mf = motionFactor();
+    if (heroVisible) drawHero(mf);
+    if (loopVisible) drawLoop(mf);
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();

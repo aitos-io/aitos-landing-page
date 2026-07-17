@@ -3,425 +3,377 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BoAT — The Trust Layer for Agentic Machines</title>
-  <meta name="description" content="BoAT gives every AI agent a body, an identity, and a wallet. The embedded trust layer where autonomous agents meet the physical and financial world." />
+  <title>aitos.io — The Sovereign Data OS for AI and Things</title>
+  <meta name="description" content="aitos.io makes physical-world data authentic, verifiable and privately usable — so its value can flow across machines, AI and the onchain economy. Data stays sovereign. Value moves freely." />
   <meta name="author" content="aitos.io" />
-  <meta name="keywords" content="AI Agent, Agentic Economy, DePIN, BoAT, Physical AI, Robotics, x402, MCP, DID, IoT, Machine Economy, aitos" />
+  <meta name="keywords" content="Data Sovereignty, Sovereign Data, IoT, Blockchain, AI, Physical AI, DePIN, BoAT, TLAY, Machine Economy, Trusted Data, Onchain, aitos" />
 
-  <meta property="og:title" content="BoAT — The Trust Layer for Agentic Machines" />
-  <meta property="og:description" content="Give every AI agent a body, an identity, and a wallet." />
+  <meta property="og:title" content="aitos.io — The Sovereign Data OS for AI and Things" />
+  <meta property="og:description" content="Data stays sovereign. Value moves freely." />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@aitos_io" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20260717d" />
 </head>
 <body>
 
-<!-- ambient background -->
-<div class="bg-grid" aria-hidden="true"></div>
-<div class="bg-glow" aria-hidden="true"></div>
-
 <!-- NAV -->
-<header class="nav">
-  <div class="nav-inner">
-    <a href="#top" class="brand">
-      <span class="brand-mark">BoAT</span>
-      <span class="brand-sub" data-i18n="brand.sub">by aitos.io</span>
-    </a>
-    <nav class="nav-links">
-      <a href="#why" data-i18n="nav.why">Why Now</a>
-      <a href="#stack" data-i18n="nav.stack">Trust Layer</a>
-      <a href="#tech" data-i18n="nav.tech">Technology</a>
-      <a href="#usecases" data-i18n="nav.usecases">Use Cases</a>
-      <a href="#builders" data-i18n="nav.builders">Builders</a>
-      <a href="#partners" data-i18n="nav.partners">Partners</a>
-    </nav>
-    <div class="nav-actions">
-      <button class="lang-toggle" id="langToggle" aria-label="Toggle language">EN / 中</button>
-      <a class="btn btn-ghost" href="https://github.com/aitos-io/BoAT-EdgeDocs" target="_blank" rel="noopener" data-i18n="nav.docs">Docs</a>
+<nav class="nav" id="nav">
+  <a href="#top" class="brand">aitos<span class="cy">.io</span></a>
+  <div class="nav-right">
+    <a href="#gap" class="nav-link" data-i18n="nav.why">Why</a>
+    <a href="#thesis" class="nav-link" data-i18n="nav.thesis">Thesis</a>
+    <a href="#loop" class="nav-link" data-i18n="nav.loop">The Loop</a>
+    <a href="#stack" class="nav-link" data-i18n="nav.stack">Stack</a>
+    <a href="#physical-ai" class="nav-link" data-i18n="nav.pai">Physical AI</a>
+    <a href="#ecosystem" class="nav-link" data-i18n="nav.eco">Ecosystem</a>
+    <a href="#contact" class="nav-cta" data-i18n="nav.cta">BUILD WITH BoAT</a>
+    <button class="lang-toggle" id="langToggle" aria-label="Toggle language">EN / 中</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="top" class="hero">
+  <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <div class="eyebrow"><span class="eyebrow-rule"></span><span data-i18n="hero.eyebrow">AI × IoT × Onchain Systems</span></div>
+    <h1 class="hero-title"><span data-i18n-html="hero.title">The Sovereign<br>Data OS for AI<br>and Things</span><span class="cursor" aria-hidden="true"></span></h1>
+    <div class="hero-row">
+      <p class="hero-sub" data-i18n-html="hero.sub"><strong>Data sovereignty infrastructure for the physical world.</strong> aitos.io makes physical-world data authentic, verifiable and privately usable — so its value can flow across machines, AI and the onchain economy.</p>
+      <div class="cta-row">
+        <a href="#thesis" class="btn btn-solid" data-i18n="hero.cta1">EXPLORE THE INFRASTRUCTURE</a>
+        <a href="#stack" class="btn btn-ghost" data-i18n="hero.cta2">BUILD WITH BoAT</a>
+      </div>
+    </div>
+  </div>
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>SENSE&nbsp;&nbsp;▸&nbsp;&nbsp;PROVE&nbsp;&nbsp;▸&nbsp;&nbsp;PROTECT&nbsp;&nbsp;▸&nbsp;&nbsp;UNDERSTAND&nbsp;&nbsp;▸&nbsp;&nbsp;EXCHANGE&nbsp;&nbsp;▸&nbsp;&nbsp;SETTLE&nbsp;&nbsp;◦&nbsp;&nbsp;DATA STAYS SOVEREIGN&nbsp;&nbsp;◦&nbsp;&nbsp;VALUE MOVES FREELY&nbsp;&nbsp;◦&nbsp;&nbsp;</span>
+      <span>SENSE&nbsp;&nbsp;▸&nbsp;&nbsp;PROVE&nbsp;&nbsp;▸&nbsp;&nbsp;PROTECT&nbsp;&nbsp;▸&nbsp;&nbsp;UNDERSTAND&nbsp;&nbsp;▸&nbsp;&nbsp;EXCHANGE&nbsp;&nbsp;▸&nbsp;&nbsp;SETTLE&nbsp;&nbsp;◦&nbsp;&nbsp;DATA STAYS SOVEREIGN&nbsp;&nbsp;◦&nbsp;&nbsp;VALUE MOVES FREELY&nbsp;&nbsp;◦&nbsp;&nbsp;</span>
     </div>
   </div>
 </header>
 
-<main id="top">
-
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <div class="eyebrow">
-      <span class="dot"></span>
-      <span data-i18n="hero.eyebrow">The Embedded Trust Layer — evolved for the Agent era</span>
-    </div>
-    <h1 class="hero-title">
-      <span data-i18n="hero.title1">Give every AI agent</span><br/>
-      <span class="grad" data-i18n="hero.title2">a body, an identity, and a wallet.</span>
-    </h1>
-    <p class="hero-sub" data-i18n="hero.sub">
-      BoAT is the embedded trust layer where autonomous AI agents meet the physical and financial world. We turn any machine — a bike, a battery, a vehicle, a humanoid — into a cryptographically-verifiable, self-paying, accountable actor.
-    </p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="#stack" data-i18n="hero.cta1">See the Stack</a>
-      <a class="btn btn-ghost" href="https://github.com/aitos-io/BoAT-EdgeDocs" target="_blank" rel="noopener" data-i18n="hero.cta2">Read the Docs →</a>
-    </div>
-
-    <div class="hero-cards">
-      <div class="card">
-        <div class="card-icon">◈</div>
-        <h3 data-i18n="hero.card1.t">Verifiable Identity</h3>
-        <p data-i18n="hero.card1.d">Agent-Bound Identity (ABI) rooted in hardware keys. Every agent has a DID that can be challenged, signed, and audited.</p>
+<!-- 01 THE GAP -->
+<section id="gap" class="section">
+  <div class="wrap">
+    <div class="sec-eyebrow" data-reveal="0"><span class="cy">01</span>&nbsp;&nbsp;—&nbsp;&nbsp;<span data-i18n="gap.label">The Gap</span></div>
+    <h2 class="sec-title" data-reveal="1" data-i18n-html="gap.title">The world has abundant data.<br><span class="mut">Very little of it is </span><span class="cy">sovereign</span><span class="mut">.</span></h2>
+    <p class="sec-sub" data-reveal="2" data-i18n="gap.sub">Billions of devices, machines and AI agents digitize the physical world every second — energy, mobility, industry, the environment, human activity. Yet almost none of that data can be verified, owned, or fairly monetized.</p>
+    <div class="hair-grid gap-grid">
+      <div class="gap-card" data-reveal="3">
+        <div class="x-glyph">✕</div>
+        <div class="card-t" data-i18n="gap.1.t">No proof of origin</div>
+        <p class="card-d" data-i18n="gap.1.d">Which real device produced this data? Today, nothing can prove it.</p>
       </div>
-      <div class="card">
-        <div class="card-icon">⇌</div>
-        <h3 data-i18n="hero.card2.t">Autonomous Payment</h3>
-        <p data-i18n="hero.card2.d">Native alignment with x402 / AP2 and on-chain rails. Agents pay, get paid, and settle without a human in the loop.</p>
+      <div class="gap-card" data-reveal="4">
+        <div class="x-glyph">✕</div>
+        <div class="card-t" data-i18n="gap.2.t">No proof of integrity</div>
+        <p class="card-d" data-i18n="gap.2.d">Altered, duplicated, replayed — and no one can tell the difference.</p>
       </div>
-      <div class="card">
-        <div class="card-icon">⎔</div>
-        <h3 data-i18n="hero.card3.t">Proof of Physical Action</h3>
-        <p data-i18n="hero.card3.d">Sensor data + hardware signatures + on-chain anchoring. Cryptographic evidence that an agent actually did the thing.</p>
+      <div class="gap-card" data-reveal="5">
+        <div class="x-glyph">✕</div>
+        <div class="card-t" data-i18n="gap.3.t">No control</div>
+        <p class="card-d" data-i18n="gap.3.d">Owners cannot govern who accesses their data, or for what.</p>
+      </div>
+      <div class="gap-card" data-reveal="6">
+        <div class="x-glyph">✕</div>
+        <div class="card-t" data-i18n="gap.4.t">No privacy</div>
+        <p class="card-d" data-i18n="gap.4.d">Once shared, data escapes its owner — forever.</p>
+      </div>
+      <div class="gap-card" data-reveal="7">
+        <div class="x-glyph">✕</div>
+        <div class="card-t" data-i18n="gap.5.t">No reward</div>
+        <p class="card-d" data-i18n="gap.5.d">Value flows to platforms — not to the people and machines who contribute.</p>
+      </div>
+    </div>
+    <p class="kicker" data-reveal="8" data-i18n-html="gap.kicker">Data is everywhere. <span class="ink">Trust, ownership and value flow are not.</span></p>
+  </div>
+</section>
+
+<!-- 02 THE THESIS (sticky scroll narrative) -->
+<section id="thesis" class="thesis">
+  <div class="thesis-sticky">
+    <div class="thesis-head">
+      <div class="sec-eyebrow"><span class="cy">02</span>&nbsp;&nbsp;—&nbsp;&nbsp;<span data-i18n="thesis.label">The Thesis</span></div>
+    </div>
+    <div class="ticks">
+      <div class="tick" data-tick="0"></div>
+      <div class="tick" data-tick="1"></div>
+      <div class="tick" data-tick="2"></div>
+      <div class="tick" data-tick="3"></div>
+    </div>
+    <div class="thesis-stage">
+      <div class="thesis-item" data-thesis="0">
+        <div class="th-eyebrow cy" data-i18n="thesis.1.e">IoT — TRUSTED CONNECTION</div>
+        <div class="th-display" data-i18n-html="thesis.1.t">IoT makes data<br><span class="cy">authentic.</span></div>
+        <p class="th-body" data-i18n="thesis.1.d">Hardware-rooted identity and cryptographic signatures prove where data comes from — the moment it is born.</p>
+      </div>
+      <div class="thesis-item" data-thesis="1">
+        <div class="th-eyebrow cy" data-i18n="thesis.2.e">BLOCKCHAIN — THE OPEN OPERATING SYSTEM FOR TRUST</div>
+        <div class="th-display" data-i18n-html="thesis.2.t">Blockchain makes data<br><span class="cy">verifiable.</span></div>
+        <p class="th-body" data-i18n="thesis.2.d">Tamper-resistant provenance, ownership, authorization and settlement — a shared world computer no single party controls.</p>
+      </div>
+      <div class="thesis-item" data-thesis="2">
+        <div class="th-eyebrow cy" data-i18n="thesis.3.e">AI — VALUE EXTRACTION</div>
+        <div class="th-display" data-i18n-html="thesis.3.t">AI makes data<br><span class="cy">valuable.</span></div>
+        <p class="th-body" data-i18n="thesis.3.d">Edge intelligence and privacy-preserving computation turn raw signals into decisions, services and economic value — without taking control away from the owner.</p>
+      </div>
+      <div class="thesis-item" data-thesis="3">
+        <div class="th-eyebrow am" data-i18n="thesis.4.e">AITOS.IO — THE CLOSED LOOP</div>
+        <div class="th-display th-display-sm" data-i18n-html="thesis.4.t">aitos.io makes that value <span class="am">flow</span> — while sovereignty stays with the owner.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- WHY NOW -->
-<section id="why" class="section">
-  <div class="container">
-    <div class="section-head">
-      <div class="tag" data-i18n="why.tag">Why Now</div>
-      <h2 data-i18n="why.title">The last mile of the LLM revolution isn't in the cloud.</h2>
-      <p class="section-sub" data-i18n="why.sub">Agents can think, plan, and call tools. What they can't do alone: prove who they are, pay for what they consume, and leave a trustworthy footprint in the physical world. BoAT has been quietly building that layer for 8 years — under a different name.</p>
+<!-- 03 THE LOOP -->
+<section id="loop" class="section section-flush">
+  <div class="wrap">
+    <div class="sec-eyebrow" data-reveal="0"><span class="cy">03</span>&nbsp;&nbsp;—&nbsp;&nbsp;<span data-i18n="loop.label">The Loop</span></div>
+    <h2 class="sec-title" data-reveal="1" data-i18n-html="loop.title">From physical signal<br>to settled value.</h2>
+  </div>
+  <div class="loop-visual" data-reveal="2">
+    <div class="wrap">
+      <canvas class="loop-canvas" id="loopCanvas" aria-hidden="true"></canvas>
     </div>
-
-    <div class="timeline">
-      <div class="tl-step">
-        <div class="tl-era" data-i18n="why.t1.era">2018 — 2023</div>
-        <h4 data-i18n="why.t1.t">Machine Economy</h4>
-        <p data-i18n="why.t1.d">Devices as passive ledger nodes. BoAT gave IoT chips their first blockchain wallet. Partners: Telefónica, Qualcomm, Microsoft, Daimler, ARM, RISC-V.</p>
-      </div>
-      <div class="tl-arrow">→</div>
-      <div class="tl-step">
-        <div class="tl-era" data-i18n="why.t2.era">2023 — 2025</div>
-        <h4 data-i18n="why.t2.t">Physical AI Agents</h4>
-        <p data-i18n="why.t2.d">DePIN, smart fleets, VPPs. Machines start to act, schedule, and earn. Arkreen, GreenBTC.Club and TLAY prove the playbook at scale.</p>
-      </div>
-      <div class="tl-arrow">→</div>
-      <div class="tl-step tl-now">
-        <div class="tl-era" data-i18n="why.t3.era">2026 →</div>
-        <h4 data-i18n="why.t3.t">Agentic Machine Economy</h4>
-        <p data-i18n="why.t3.d">LLM-driven agents need bodies to act and trust to transact. BoAT becomes the identity, payment and proof layer for every agent — embedded or cloud-resident.</p>
+    <div class="wrap">
+      <div class="loop-grid">
+        <div class="loop-step">
+          <div class="loop-step-t" data-i18n="loop.1.t">Sense</div>
+          <p class="loop-step-d" data-i18n="loop.1.d">IoT captures reality at the source.</p>
+        </div>
+        <div class="loop-step">
+          <div class="loop-step-t" data-i18n="loop.2.t">Prove</div>
+          <p class="loop-step-d" data-i18n="loop.2.d">Device identity signs every byte.</p>
+        </div>
+        <div class="loop-step">
+          <div class="loop-step-t" data-i18n="loop.3.t">Protect</div>
+          <p class="loop-step-d" data-i18n="loop.3.d">Sovereignty and privacy by design.</p>
+        </div>
+        <div class="loop-step">
+          <div class="loop-step-t" data-i18n="loop.4.t">Understand</div>
+          <p class="loop-step-d" data-i18n="loop.4.d">AI extracts intelligence in place.</p>
+        </div>
+        <div class="loop-step">
+          <div class="loop-step-t am" data-i18n="loop.5.t">Exchange</div>
+          <p class="loop-step-d" data-i18n="loop.5.d">Programmable authorization and trade.</p>
+        </div>
+        <div class="loop-step">
+          <div class="loop-step-t am" data-i18n="loop.6.t">Settle</div>
+          <p class="loop-step-d" data-i18n="loop.6.d">Value returns to its contributors.</p>
+        </div>
       </div>
     </div>
   </div>
+  <div class="wrap loop-closing">
+    <p class="loop-close" data-reveal="3" data-i18n-html="loop.close">Move the <span class="am">value</span>, not the <span class="cy">data</span>.</p>
+    <p class="loop-exp" data-reveal="4" data-i18n="loop.exp">The goal is not free-flowing raw data — it is a closed loop where data stays under its owner’s control while its value becomes verifiable, exchangeable and fairly distributed.</p>
+  </div>
 </section>
 
-<!-- TRUST LAYER / STACK -->
-<section id="stack" class="section section-alt">
-  <div class="container">
-    <div class="section-head">
-      <div class="tag" data-i18n="stack.tag">The Agentic Trust Layer</div>
-      <h2 data-i18n="stack.title">Three things every AI agent is missing. We ship all three.</h2>
-      <p class="section-sub" data-i18n="stack.sub">MCP gives agents tools. A2A gives them teammates. x402 gives them rails. BoAT gives them a body, a name, and a signature that regulators, counterparties, and insurers can actually trust.</p>
+<!-- 04 THE NAME -->
+<section id="name" class="section section-name">
+  <div class="wrap">
+    <div class="sec-eyebrow center" data-reveal="0"><span class="cy">04</span>&nbsp;&nbsp;—&nbsp;&nbsp;<span data-i18n="name.label">The name is the thesis</span></div>
+    <div class="name-word" data-reveal="1"><span class="seg seg-ai">ai</span><span class="seg seg-t">t</span><span class="seg seg-os">os</span><span class="seg seg-io">.io</span></div>
+    <div class="hair-grid name-grid">
+      <div class="name-card nc-ai" data-reveal="2">
+        <div class="name-glyph cy">ai</div>
+        <div class="name-label" data-i18n="name.ai.l">ARTIFICIAL INTELLIGENCE</div>
+        <p class="name-d" data-i18n="name.ai.d">Intelligence and value extraction — turning trusted data into decisions and services.</p>
+      </div>
+      <div class="name-card nc-t" data-reveal="3">
+        <div class="name-glyph ink">t</div>
+        <div class="name-label" data-i18n="name.t.l">THINGS · IoT</div>
+        <p class="name-d" data-i18n="name.t.d">The trusted connection to the physical world — where authentic data is born.</p>
+      </div>
+      <div class="name-card nc-os" data-reveal="4">
+        <div class="name-glyph am">os</div>
+        <div class="name-label" data-i18n="name.os.l">THE BLOCKCHAIN OPERATING SYSTEM</div>
+        <p class="name-d" data-i18n="name.os.d">An open, decentralized operating system for trust — state, identity, rights and settlement no single party controls.</p>
+      </div>
+      <div class="name-card nc-io" data-reveal="5">
+        <div class="name-glyph dim">.io</div>
+        <div class="name-label" data-i18n="name.io.l">INPUT / OUTPUT</div>
+        <p class="name-d" data-i18n="name.io.d">The interface between the physical and digital worlds — in both directions.</p>
+      </div>
     </div>
+    <p class="name-kicker" data-reveal="6" data-i18n-html="name.kicker"><span class="cy">AI understands.</span> <span class="ink">Things sense.</span> <span class="am">The blockchain OS verifies, coordinates and settles.</span></p>
+  </div>
+</section>
 
+<!-- 05 THE STACK -->
+<section id="stack" class="section">
+  <div class="wrap">
+    <div class="sec-eyebrow" data-reveal="0"><span class="cy">05</span>&nbsp;&nbsp;—&nbsp;&nbsp;<span data-i18n="stack.label">The Stack</span></div>
+    <h2 class="sec-title" data-reveal="1" data-i18n-html="stack.title">One infrastructure.<br>Trust from silicon to settlement.</h2>
     <div class="stack-grid">
-      <div class="stack-card">
-        <div class="stack-num">01</div>
-        <h3 data-i18n="stack.1.t">Agent-Bound Identity</h3>
-        <p data-i18n="stack.1.d">A DID rooted in hardware — whether the "hardware" is a secure element in a robot, a TEE in a server, or an eSIM in a meter. Every action is signed, challengeable, and revocable.</p>
-        <ul class="stack-features">
-          <li data-i18n="stack.1.f1">W3C DID compatible</li>
-          <li data-i18n="stack.1.f2">Hardware-rooted keys</li>
-          <li data-i18n="stack.1.f3">Per-agent, per-session, per-tool scopes</li>
-        </ul>
-      </div>
-      <div class="stack-card">
-        <div class="stack-num">02</div>
-        <h3 data-i18n="stack.2.t">Agentic Wallet</h3>
-        <p data-i18n="stack.2.d">A native wallet the agent owns — not a credit card it borrows. Supports streaming micropayments, budget caps, policy guardrails, and multi-chain settlement out of the box.</p>
-        <ul class="stack-features">
-          <li data-i18n="stack.2.f1">x402 / AP2 ready</li>
-          <li data-i18n="stack.2.f2">Programmable spend policies</li>
-          <li data-i18n="stack.2.f3">Multi-chain, stablecoin-first</li>
-        </ul>
-      </div>
-      <div class="stack-card featured">
-        <div class="stack-num">03</div>
-        <div class="badge" data-i18n="stack.3.badge">New</div>
-        <h3 data-i18n="stack.3.t">Proof of Physical Action</h3>
-        <p data-i18n="stack.3.d">The antidote to hallucination. Sensor readings, actuator commands, and timestamps are co-signed on-device and anchored on-chain — turning an agent's claim into verifiable physical evidence.</p>
-        <ul class="stack-features">
-          <li data-i18n="stack.3.f1">Sensor + key co-signature</li>
-          <li data-i18n="stack.3.f2">Auditable action logs</li>
-          <li data-i18n="stack.3.f3">Insurance-grade provenance</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CORE TECH -->
-<section id="tech" class="section">
-  <div class="container">
-    <div class="section-head">
-      <div class="tag" data-i18n="tech.tag">Core Technology</div>
-      <h2 data-i18n="tech.title">Eight years of embedded cryptography. Ready for the agent era.</h2>
-      <p class="section-sub" data-i18n="tech.sub">The same open-source framework trusted by telecom, automotive, and silicon leaders — now re-aimed at the agentic stack.</p>
-    </div>
-
-    <div class="tech-grid">
-      <div class="tech-card">
-        <div class="tech-icon">{C}</div>
-        <h4 data-i18n="tech.1.t">Embedded C SDK</h4>
-        <p data-i18n="tech.1.d">Runs on MCUs, modems and edge SoCs where Python can't go. Lightweight, open-source, production-proven.</p>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">ID</div>
-        <h4 data-i18n="tech.2.t">DID & Verifiable Credentials</h4>
-        <p data-i18n="tech.2.d">Decentralized identity for every agent, device, and tool call. Interoperable with emerging agent-id standards.</p>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">⛓</div>
-        <h4 data-i18n="tech.3.t">Trusted Data On-Chain</h4>
-        <p data-i18n="tech.3.d">Integrity and traceability for every reading an agent relies on — or every claim it makes.</p>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">$</div>
-        <h4 data-i18n="tech.4.t">Machine Payment</h4>
-        <p data-i18n="tech.4.d">Wallet primitives designed for devices and agents: low-power signing, streaming settlement, policy-bound spend.</p>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">🔒</div>
-        <h4 data-i18n="tech.5.t">Secure Key Management</h4>
-        <p data-i18n="tech.5.d">TEE, SE and HSM integrations. Private keys never leave the silicon.</p>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">⇄</div>
-        <h4 data-i18n="tech.6.t">Multi-chain Interop</h4>
-        <p data-i18n="tech.6.d">Neutral by design. Plug into Ethereum, Solana, Bitcoin L2s, and more without rewriting your firmware.</p>
-      </div>
-    </div>
-
-    <div class="philosophy">
-      <h3 data-i18n="tech.phil.t">Open, neutral, silicon-agnostic.</h3>
-      <p data-i18n="tech.phil.d">BoAT doesn't pick winners. Any chip, any chain, any agent framework. The trust layer should be as universal as TCP/IP.</p>
-      <div class="chips">
-        <span class="chip" data-i18n="tech.phil.c1">Multi-chip</span>
-        <span class="chip" data-i18n="tech.phil.c2">Multi-chain</span>
-        <span class="chip" data-i18n="tech.phil.c3">Open-source</span>
-        <span class="chip" data-i18n="tech.phil.c4">Standards-first</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- USE CASES -->
-<section id="usecases" class="section section-alt">
-  <div class="container">
-    <div class="section-head">
-      <div class="tag" data-i18n="uc.tag">Agents in the Wild</div>
-      <h2 data-i18n="uc.title">Seven places the agentic economy is already arriving.</h2>
-      <p class="section-sub" data-i18n="uc.sub">The use cases didn't change. The actors did. Every scene below now has an autonomous agent deciding, transacting, and being held accountable — because BoAT is inside.</p>
-    </div>
-
-    <div class="uc-grid">
-      <div class="uc-card">
-        <div class="uc-kicker" data-i18n="uc.1.k">Mobility</div>
-        <h4 data-i18n="uc.1.t">Self-Dispatching Bike Fleets</h4>
-        <p data-i18n="uc.1.d">Each bike is an agent with its own wallet. A fleet-level LLM scheduler negotiates rebalancing with the bikes themselves, no central operator required.</p>
-      </div>
-      <div class="uc-card">
-        <div class="uc-kicker" data-i18n="uc.2.k">Energy</div>
-        <h4 data-i18n="uc.2.t">Battery & VPP Trading Agents</h4>
-        <p data-i18n="uc.2.d">Storage devices bid into energy markets autonomously. Revenue settles on-chain. Paired with Arkreen & GreenBTC for green-energy attestation.</p>
-      </div>
-      <div class="uc-card">
-        <div class="uc-kicker" data-i18n="uc.3.k">Automotive</div>
-        <h4 data-i18n="uc.3.t">Mobility Agents in Every Car</h4>
-        <p data-i18n="uc.3.d">The vehicle pays for tolls, charging, parking, insurance — and produces a cryptographic trip log good enough for regulators.</p>
-      </div>
-      <div class="uc-card">
-        <div class="uc-kicker" data-i18n="uc.4.k">Solar / DePIN</div>
-        <h4 data-i18n="uc.4.t">Autonomous Green Assets</h4>
-        <p data-i18n="uc.4.d">Distributed PV and storage operate, sell, and prove carbon credits as independent economic agents.</p>
-      </div>
-      <div class="uc-card">
-        <div class="uc-kicker" data-i18n="uc.5.k">Industry</div>
-        <h4 data-i18n="uc.5.t">Self-Optimizing Factory Agents</h4>
-        <p data-i18n="uc.5.d">Machines procure consumables, negotiate with neighbors, and log every action in a tamper-evident audit trail.</p>
-      </div>
-      <div class="uc-card">
-        <div class="uc-kicker" data-i18n="uc.6.k">Home</div>
-        <h4 data-i18n="uc.6.t">Home AI Butlers with Budgets</h4>
-        <p data-i18n="uc.6.d">A household agent with its own wallet, spend caps, and audit log. Subscriptions, energy, deliveries — all handled.</p>
-      </div>
-      <div class="uc-card uc-new">
-        <div class="uc-kicker uc-kicker-hot" data-i18n="uc.7.k">New · Robotics</div>
-        <h4 data-i18n="uc.7.t">Humanoid & Service Robots</h4>
-        <p data-i18n="uc.7.d">When a robot walks into a store or factory, who does it represent, who pays for what it consumes, and who is liable when it errs? BoAT is the answer shipped in firmware.</p>
-      </div>
-    </div>
-
-    <div class="vision">
-      <div class="vision-text">
-        <h3 data-i18n="uc.vision.t">From a Trillion Machines to a Trillion Agents.</h3>
-        <p data-i18n="uc.vision.d">The original thesis scaled by device count. The new math scales by agents × devices × interactions per second. We are not rounding the corner — we are jumping to a new axis.</p>
-      </div>
-      <div class="vision-stats">
-        <div><strong>100B+</strong><span data-i18n="uc.vision.s1">connectable devices</span></div>
-        <div><strong>∞</strong><span data-i18n="uc.vision.s2">agent × device pairings</span></div>
-        <div><strong>24 / 7</strong><span data-i18n="uc.vision.s3">autonomous economic activity</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOR BUILDERS -->
-<section id="builders" class="section">
-  <div class="container">
-    <div class="section-head">
-      <div class="tag" data-i18n="build.tag">For AI & Robotics Builders</div>
-      <h2 data-i18n="build.title">Plug BoAT into the stack you're already using.</h2>
-      <p class="section-sub" data-i18n="build.sub">Whether you're shipping a humanoid, a DePIN network, or an MCP-powered agent that needs to actually spend money — BoAT slots in under your framework of choice.</p>
-    </div>
-
-    <div class="builders-grid">
-      <div class="builder-card">
-        <div class="builder-label" data-i18n="build.1.l">Agent Frameworks</div>
-        <div class="builder-logos">
-          <span>MCP</span><span>A2A</span><span>LangGraph</span><span>AutoGen</span>
+      <div class="product-card pc-boat" data-reveal="2">
+        <div class="prod-head">
+          <div class="prod-name">BoAT</div>
+          <div class="prod-tag cy" data-i18n="stack.boat.tag">DEVICE SIDE</div>
         </div>
-        <p data-i18n="build.1.d">Expose BoAT as an MCP tool server. Any agent gains a signed identity and a wallet in one call.</p>
-      </div>
-      <div class="builder-card">
-        <div class="builder-label" data-i18n="build.2.l">Payment Rails</div>
-        <div class="builder-logos">
-          <span>x402</span><span>AP2</span><span>ERC-4337</span><span>Stablecoins</span>
+        <p class="prod-tagline cy" data-i18n="stack.boat.tl">The Embedded Trust Runtime for Sovereign Data</p>
+        <p class="prod-body" data-i18n="stack.boat.d">Inside chips, sensors, machines and edge devices — so data is born trusted.</p>
+        <div class="chips">
+          <span class="chip" data-i18n="stack.boat.c1">Device identity</span>
+          <span class="chip" data-i18n="stack.boat.c2">Hardware keys</span>
+          <span class="chip" data-i18n="stack.boat.c3">Data signing</span>
+          <span class="chip" data-i18n="stack.boat.c4">Secure storage</span>
+          <span class="chip" data-i18n="stack.boat.c5">Privacy authorization</span>
+          <span class="chip" data-i18n="stack.boat.c6">Onchain proof</span>
+          <span class="chip" data-i18n="stack.boat.c7">Machine wallet &amp; payment</span>
         </div>
-        <p data-i18n="build.2.d">Settle agent-to-agent payments, streaming micropayments, and per-tool usage — all with on-device policy enforcement.</p>
+        <p class="prod-foot" data-i18n-html="stack.boat.f">↳ Trust <span class="cy">at the source</span></p>
       </div>
-      <div class="builder-card">
-        <div class="builder-label" data-i18n="build.3.l">Silicon & Edge</div>
-        <div class="builder-logos">
-          <span>Qualcomm</span><span>ARM</span><span>RISC-V</span><span>MCUs · Modems · TEEs</span>
+      <div class="product-card pc-tlay" data-reveal="3">
+        <div class="prod-head">
+          <div class="prod-name">TLAY</div>
+          <div class="prod-tag am" data-i18n="stack.tlay.tag">NETWORK SIDE</div>
         </div>
-        <p data-i18n="build.3.d">An open C SDK that runs where Python and containers can't. Production-deployed across telecom and automotive.</p>
+        <p class="prod-tagline am" data-i18n="stack.tlay.tl">The Trust and Value Layer for Physical-World Data</p>
+        <p class="prod-body" data-i18n="stack.tlay.d">Where trusted data becomes rights, proofs, services and settled value.</p>
+        <div class="chips">
+          <span class="chip" data-i18n="stack.tlay.c1">Data verification</span>
+          <span class="chip" data-i18n="stack.tlay.c2">Data ownership</span>
+          <span class="chip" data-i18n="stack.tlay.c3">Proof of Physical Work</span>
+          <span class="chip" data-i18n="stack.tlay.c4">Programmable authorization</span>
+          <span class="chip" data-i18n="stack.tlay.c5">AI-agent access</span>
+          <span class="chip" data-i18n="stack.tlay.c6">Machine payments</span>
+          <span class="chip" data-i18n="stack.tlay.c7">Data assetization &amp; settlement</span>
+        </div>
+        <p class="prod-foot" data-i18n-html="stack.tlay.f">↳ Trust and value <span class="am">across the network</span></p>
       </div>
     </div>
-
-    <pre class="code-block" aria-label="code example">
-<span class="c-muted">// One agent, one identity, one wallet — on a $2 chip.</span>
-<span class="c-kw">boat_agent_t</span> agent = boat_agent_init(<span class="c-str">"did:boat:0xA1...9F"</span>);
-boat_wallet_bind(&agent, <span class="c-kw">CHAIN_ETH</span>, key_in_secure_element);
-boat_policy_set(&agent, <span class="c-str">"max_spend_per_hour"</span>, <span class="c-num">5_USDC</span>);
-
-<span class="c-muted">// Agent acts. Every action is signed, paid, and proven.</span>
-<span class="c-kw">boat_action_t</span> act = boat_pop_sign(sensor_read(), actuator_cmd());
-boat_anchor_onchain(&act);
-boat_pay(&agent, counterparty, <span class="c-num">0.01_USDC</span>);</pre>
-  </div>
-</section>
-
-<!-- PARTNERS -->
-<section id="partners" class="section section-alt">
-  <div class="container">
-    <div class="section-head">
-      <div class="tag" data-i18n="part.tag">Trusted By</div>
-      <h2 data-i18n="part.title">The partners that powered machine economy are powering the agent economy.</h2>
-    </div>
-
-    <div class="partners-grid">
-      <div class="partner">Telefónica</div>
-      <div class="partner">Qualcomm</div>
-      <div class="partner">Microsoft</div>
-      <div class="partner">Daimler</div>
-      <div class="partner">ARM</div>
-      <div class="partner">RISC-V</div>
-    </div>
-
-    <div class="ecosystem">
-      <h3 data-i18n="eco.t">Ecosystem</h3>
-      <p data-i18n="eco.d">Real networks already running on the thesis.</p>
-      <div class="eco-cards">
-        <a class="eco-card" href="https://www.arkreen.com" target="_blank" rel="noopener">
-          <strong>Arkreen</strong>
-          <span data-i18n="eco.1">Distributed renewable energy DePIN</span>
-        </a>
-        <a class="eco-card" href="https://www.greenbtc.club" target="_blank" rel="noopener">
-          <strong>GreenBTC.Club</strong>
-          <span data-i18n="eco.2">Green-attested Bitcoin mining</span>
-        </a>
-        <a class="eco-card" href="https://www.tlay.io" target="_blank" rel="noopener">
-          <strong>TLAY</strong>
-          <span data-i18n="eco.3">Trust layer for autonomous systems</span>
-        </a>
-        <a class="eco-card" href="https://signet.aitos.io" target="_blank" rel="noopener">
-          <strong>Signet</strong>
-          <span data-i18n="eco.4">Sign-only wallet — agents act, humans approve</span>
-        </a>
-      </div>
+    <div class="stack-bar" data-reveal="4">
+      <span class="stack-bar-l" data-i18n-html="stack.bar">aitos.io <span class="ink">defines and builds</span> the sovereign data infrastructure beneath both.</span>
+      <span class="stack-bar-r" data-i18n="stack.chain">SILICON → NETWORK → ECONOMY</span>
     </div>
   </div>
 </section>
 
-<!-- CTA STRIP -->
-<section class="cta-strip">
-  <div class="container">
-    <h2 data-i18n="cta.t">Building the agent economy? Start at the trust layer.</h2>
-    <p data-i18n="cta.d">Whether you ship firmware, robots, or LLM agents that need to act in the real world — we want to talk.</p>
-    <div class="cta-actions">
-      <a class="btn btn-primary" href="mailto:info@aitos.io" data-i18n="cta.b1">Contact Us</a>
-      <a class="btn btn-ghost" href="https://github.com/aitos-io/BoAT-EdgeDocs" target="_blank" rel="noopener" data-i18n="cta.b2">Explore on GitHub →</a>
+<!-- 06 PHYSICAL AI -->
+<section id="physical-ai" class="section section-pai">
+  <div class="wrap pai-grid">
+    <div>
+      <div class="sec-eyebrow" data-reveal="0"><span class="am">06</span>&nbsp;&nbsp;—&nbsp;&nbsp;<span data-i18n="pai.label">First Application · Physical AI</span></div>
+      <h2 class="sec-title" data-reveal="1" data-i18n-html="pai.title">AI is leaving<br>the cloud.</h2>
+      <p class="pai-body" data-reveal="2" data-i18n="pai.d1">When AI acts through robots, vehicles, energy assets and industrial machines, every decision depends on data that is real, unaltered and private.</p>
+      <p class="pai-bold" data-reveal="3" data-i18n="pai.d2">Physical AI needs a sovereign data layer before it needs another model.</p>
+      <p class="pai-kicker" data-reveal="4" data-i18n-html="pai.kicker">The agentic machine economy is the first application<br>of sovereign data — <span class="am">not the whole story.</span></p>
+    </div>
+    <div class="pai-rows">
+      <div class="pai-row" data-reveal="2">
+        <div>
+          <div class="pai-row-t" data-i18n="pai.1.t">Machine Identity</div>
+          <p class="pai-row-d" data-i18n="pai.1.d">Prove who acted, and whose data it is.</p>
+        </div>
+        <span class="pai-idx">01</span>
+      </div>
+      <div class="pai-row" data-reveal="3">
+        <div>
+          <div class="pai-row-t" data-i18n="pai.2.t">Trusted Data</div>
+          <p class="pai-row-d" data-i18n="pai.2.d">Prove the inputs AI relies on are real.</p>
+        </div>
+        <span class="pai-idx">02</span>
+      </div>
+      <div class="pai-row" data-reveal="4">
+        <div>
+          <div class="pai-row-t" data-i18n="pai.3.t">Proof of Physical Action</div>
+          <p class="pai-row-d" data-i18n="pai.3.d">Prove what AI actually did in the real world.</p>
+        </div>
+        <span class="pai-idx">03</span>
+      </div>
+      <div class="pai-row" data-reveal="5">
+        <div>
+          <div class="pai-row-t" data-i18n="pai.4.t">Machine Wallet</div>
+          <p class="pai-row-d" data-i18n="pai.4.d">Let data, services and machine work earn.</p>
+        </div>
+        <span class="pai-idx">04</span>
+      </div>
+      <div class="pai-row" data-reveal="6">
+        <div>
+          <div class="pai-row-t" data-i18n="pai.5.t">Machine Payment</div>
+          <p class="pai-row-d" data-i18n="pai.5.d">Settle value automatically, machine to machine.</p>
+        </div>
+        <span class="pai-idx">05</span>
+      </div>
     </div>
   </div>
 </section>
 
-</main>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="brand">
-          <span class="brand-mark">BoAT</span>
-          <span class="brand-sub">by aitos.io</span>
+<!-- 07 ECOSYSTEM -->
+<section id="ecosystem" class="section">
+  <div class="wrap">
+    <div class="sec-eyebrow" data-reveal="0"><span class="cy">07</span>&nbsp;&nbsp;—&nbsp;&nbsp;<span data-i18n="eco.label">Ecosystem</span></div>
+    <h2 class="sec-title" data-reveal="1" data-i18n-html="eco.title">Real networks,<br>already running on the thesis.</h2>
+    <p class="kicker" data-reveal="2" data-i18n-html="eco.sub">Eight years of embedded trust — <span class="ink">across telecom, silicon and automotive.</span></p>
+    <div class="hair-grid eco-grid">
+      <a class="eco-card" data-reveal="4" href="https://www.arkreen.com" target="_blank" rel="noopener">
+        <div class="eco-head">
+          <div class="eco-name">Arkreen</div>
+          <span class="eco-arrow">↗</span>
         </div>
-        <p class="footer-about" data-i18n="foot.about">The embedded trust layer for agentic machines. Identity, payment, and proof — shipped in firmware.</p>
-      </div>
-      <div>
-        <h5 data-i18n="foot.product">Product</h5>
-        <a href="#stack" data-i18n="foot.l1">Trust Layer</a>
-        <a href="#tech" data-i18n="foot.l2">Technology</a>
-        <a href="#builders" data-i18n="foot.l3">For Builders</a>
-      </div>
-      <div>
-        <h5 data-i18n="foot.resources">Resources</h5>
-        <a href="https://github.com/aitos-io/BoAT-EdgeDocs" target="_blank" rel="noopener">Documentation</a>
-        <a href="https://github.com/aitos-io/BoAT-ProjectTemplate" target="_blank" rel="noopener">Project Template</a>
-        <a href="https://github.com/aitos-io" target="_blank" rel="noopener">GitHub</a>
-      </div>
-      <div>
-        <h5 data-i18n="foot.company">Company</h5>
-        <a href="mailto:info@aitos.io">info@aitos.io</a>
-        <a href="https://twitter.com/aitos_io" target="_blank" rel="noopener">@aitos_io</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 aitos.io Pte Ltd. <span data-i18n="foot.rights">All rights reserved.</span></span>
-      <div class="footer-legal">
-        <a href="#" data-i18n="foot.privacy">Privacy</a>
-        <a href="#" data-i18n="foot.terms">Terms</a>
-        <a href="#" data-i18n="foot.cookie">Cookies</a>
-      </div>
+        <p class="eco-d" data-i18n="eco.1.d">Distributed renewable energy DePIN</p>
+      </a>
+      <a class="eco-card" data-reveal="5" href="https://www.greenbtc.club" target="_blank" rel="noopener">
+        <div class="eco-head">
+          <div class="eco-name">GreenBTC.Club</div>
+          <span class="eco-arrow">↗</span>
+        </div>
+        <p class="eco-d" data-i18n="eco.2.d">Green-attested Bitcoin mining</p>
+      </a>
+      <a class="eco-card" data-reveal="6" href="https://www.tlay.io" target="_blank" rel="noopener">
+        <div class="eco-head">
+          <div class="eco-name">TLAY</div>
+          <span class="eco-arrow">↗</span>
+        </div>
+        <p class="eco-d" data-i18n="eco.3.d">The trust and value layer for physical-world data</p>
+      </a>
+      <a class="eco-card" data-reveal="7" href="https://signet.aitos.io" target="_blank" rel="noopener">
+        <div class="eco-head">
+          <div class="eco-name">Signet</div>
+          <span class="eco-arrow">↗</span>
+        </div>
+        <p class="eco-d" data-i18n="eco.4.d">Sign-only wallet — agents act, humans approve</p>
+      </a>
     </div>
   </div>
-</footer>
+</section>
 
-<script src="app.js"></script>
+<!-- CLOSING MANIFESTO + FOOTER -->
+<section id="contact" class="section section-contact">
+  <div class="wrap">
+    <div class="manifesto">
+      <div class="manifesto-line" data-reveal="0" data-i18n-html="cta.m1">Data stays <span class="cy">sovereign</span>.</div>
+      <div class="manifesto-line" data-reveal="1" data-i18n-html="cta.m2">Value moves <span class="am">freely</span>.</div>
+      <p class="manifesto-sub" data-reveal="2" data-i18n="cta.d">From sensors to AI, from physical activity to the onchain economy — aitos.io enables data to be authenticated, protected, utilized and fairly monetized.</p>
+      <div class="cta-row center" data-reveal="3">
+        <a href="#thesis" class="btn btn-solid" data-i18n="hero.cta1">EXPLORE THE INFRASTRUCTURE</a>
+        <a href="#stack" class="btn btn-ghost" data-i18n="hero.cta2">BUILD WITH BoAT</a>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <div>
+        <div class="foot-brand">aitos<span class="cy">.io</span></div>
+        <p class="foot-tagline" data-i18n="foot.tagline">DATA SOVEREIGNTY INFRASTRUCTURE FOR THE PHYSICAL WORLD</p>
+      </div>
+      <div class="foot-links">
+        <a href="#stack">BoAT</a>
+        <a href="#stack">TLAY</a>
+        <a href="#physical-ai">PHYSICAL AI</a>
+        <a href="#top" data-i18n="foot.top">↑ TOP</a>
+      </div>
+      <p class="foot-copy">© <span id="year">2026</span> aitos.io</p>
+    </div>
+  </div>
+</section>
+
+<script src="app.js?v=20260717d"></script>
 </body>
 </html>
