@@ -557,6 +557,26 @@ a:hover { color: #c2f1ff; }
 .pai-row-t { font-family: var(--font-display); font-size: 15px; font-weight: 400; }
 .pai-row-d { font-size: 13.5px; color: var(--dim); margin: 8px 0 0; line-height: 1.55; }
 .pai-idx { font-family: var(--font-mono); font-size: 11px; color: var(--faint); }
+.pai-ai-band { margin-top: 90px; }
+.pai-ai-head {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  letter-spacing: 0.32em;
+  color: var(--c-data);
+  text-transform: uppercase;
+}
+.pai-ai-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 26px;
+}
+.pai-ai-cell { background: var(--surface); padding: 26px 24px 30px; }
+.pai-ai-name {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--ink);
+}
+.pai-ai-d { font-size: 13.5px; line-height: 1.6; color: var(--dim); margin: 10px 0 0; }
 
 /* ---------- 07 ecosystem ---------- */
 #ecosystem { padding-bottom: 150px; }

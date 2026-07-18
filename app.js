@@ -14,7 +14,7 @@ const i18n = {
 
     'hero.eyebrow': 'AI × IoT × Onchain Systems',
     'hero.title': 'The Sovereign<br>Data OS for AI<br>and Things',
-    'hero.sub': '<strong>Data sovereignty infrastructure for the physical world.</strong> aitos.io makes physical-world data authentic, verifiable and privately usable — so its value can flow across machines, AI and the onchain economy.',
+    'hero.sub': '<strong>Data sovereignty infrastructure for the physical world — built for the AI era.</strong> aitos.io makes physical-world data authentic, verifiable and privately usable — so its value can flow across machines, AI and the onchain economy.',
     'hero.cta1': 'EXPLORE THE INFRASTRUCTURE',
     'hero.cta2': 'BUILD WITH BoAT',
 
@@ -117,6 +117,15 @@ const i18n = {
     'pai.4.d': 'Let data, services and machine work earn.',
     'pai.5.t': 'Machine Payment',
     'pai.5.d': 'Settle value automatically, machine to machine.',
+    'pai.ai.t': 'WHAT AI GETS FROM AITOS.IO',
+    'pai.ai.1.t': 'Trusted inputs',
+    'pai.ai.1.d': 'Sensor data AI can verify — not just ingest.',
+    'pai.ai.2.t': 'Verifiable actions',
+    'pai.ai.2.d': 'Onchain records of what agents actually did.',
+    'pai.ai.3.t': 'Policy-based access',
+    'pai.ai.3.d': 'Data usable under owner-defined rules — privacy intact.',
+    'pai.ai.4.t': 'Economic settlement',
+    'pai.ai.4.d': 'Agents pay — and get paid — for data and services.',
 
     'eco.label': 'Ecosystem',
     'eco.title': 'Real networks,<br>already running on the thesis.',
@@ -181,7 +190,7 @@ const i18n = {
 
     'hero.eyebrow': 'AI × IoT × 链上系统',
     'hero.title': '为 AI 与万物打造的<br>主权数据操作系统',
-    'hero.sub': '<strong>面向物理世界的数据主权基础设施。</strong>aitos.io 让物理世界的数据真实可信、可被验证、可在隐私保护下使用——让数据的价值在机器、AI 与链上经济之间自由流动。',
+    'hero.sub': '<strong>面向物理世界的数据主权基础设施——为 AI 时代而建。</strong>aitos.io 让物理世界的数据真实可信、可被验证、可在隐私保护下使用——让数据的价值在机器、AI 与链上经济之间自由流动。',
     'hero.cta1': '探索基础设施',
     'hero.cta2': '用 BoAT 构建',
 
@@ -284,6 +293,15 @@ const i18n = {
     'pai.4.d': '让数据、服务与机器劳动获得收益。',
     'pai.5.t': '机器支付',
     'pai.5.d': '价值在机器与机器之间自动结算。',
+    'pai.ai.t': 'AI 从 AITOS.IO 得到什么',
+    'pai.ai.1.t': '可信输入',
+    'pai.ai.1.d': 'AI 得到的是可验证的数据，而不只是可读取的数据。',
+    'pai.ai.2.t': '可验证行为',
+    'pai.ai.2.d': '智能体的实际行为留下链上记录。',
+    'pai.ai.3.t': '按策略访问',
+    'pai.ai.3.d': '数据在主人定义的规则下被使用——隐私不破。',
+    'pai.ai.4.t': '经济结算',
+    'pai.ai.4.d': '智能体为数据与服务付费，也因此获得收益。',
 
     'eco.label': '生态',
     'eco.title': '真实运行的网络，<br>是这套论点最好的注脚。',
