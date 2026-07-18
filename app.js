@@ -45,6 +45,7 @@ const i18n = {
     'thesis.3.d': 'Edge intelligence and privacy-preserving computation turn raw signals into decisions, services and economic value — without taking control away from the owner.',
     'thesis.4.e': 'AITOS.IO — THE CLOSED LOOP',
     'thesis.4.t': 'aitos.io makes that value <span class="am">flow</span> — while sovereignty stays with the owner.',
+    'thesis.more': 'READ THE FULL THESIS →',
 
     'loop.label': 'The Loop',
     'loop.title': 'From physical signal<br>to settled value.',
@@ -130,7 +131,9 @@ const i18n = {
     'cta.d': 'From sensors to AI, from physical activity to the onchain economy — aitos.io enables data to be authenticated, protected, utilized and fairly monetized.',
 
     'foot.tagline': 'DATA SOVEREIGNTY INFRASTRUCTURE FOR THE PHYSICAL WORLD',
-    'foot.top': '↑ TOP'
+    'foot.thesis': 'THESIS',
+    'foot.top': '↑ TOP',
+    'art.back': '← Back to aitos.io'
   },
 
   zh: {
@@ -175,6 +178,7 @@ const i18n = {
     'thesis.3.d': '边缘智能与隐私计算把原始信号变成决策、服务与经济价值——而控制权始终属于数据的主人。',
     'thesis.4.e': 'AITOS.IO — 闭环',
     'thesis.4.t': 'aitos.io 让这些价值<span class="am">流动</span>起来——而数据主权始终留在主人手中。',
+    'thesis.more': '阅读完整论点 →',
 
     'loop.label': '价值闭环',
     'loop.title': '从物理信号<br>到结算的价值。',
@@ -260,7 +264,9 @@ const i18n = {
     'cta.d': '从传感器到 AI，从物理世界的活动到链上经济——aitos.io 让数据可被认证、被守护、被利用，并被公平地变现。',
 
     'foot.tagline': '面向物理世界的数据主权基础设施',
-    'foot.top': '↑ 回到顶部'
+    'foot.thesis': '完整论点',
+    'foot.top': '↑ 回到顶部',
+    'art.back': '← 返回 aitos.io'
   }
 };
 
