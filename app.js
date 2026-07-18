@@ -132,8 +132,42 @@ const i18n = {
 
     'foot.tagline': 'DATA SOVEREIGNTY INFRASTRUCTURE FOR THE PHYSICAL WORLD',
     'foot.thesis': 'THESIS',
+    'foot.brand': 'BRAND',
     'foot.top': '↑ TOP',
-    'art.back': '← Back to aitos.io'
+    'art.back': '← Back to aitos.io',
+
+    'bk.eyebrow': 'Brand Kit · Wordmark System V2.0 · 2026',
+    'bk.title': 'The type <span class="cy">is</span> the brand.',
+    'bk.sub': 'Zero graphic ornament. Lowercase Unbounded, one cyan move, nothing else. Data stays sovereign. Value moves freely.',
+    'bk.download': 'DOWNLOAD ALL ASSETS (.ZIP)',
+    'bk.download2': 'DOWNLOAD BRAND KIT',
+    'bk.s1.label': 'The Wordmark',
+    'bk.s1.d1': 'The wordmark is the entire identity: lowercase "aitos.io" set in Unbounded Medium. The only design move is ".io" in Signal Cyan — the interface between the physical and digital worlds, rendered in the color of data.',
+    'bk.s1.d2': 'The monogram distills the mark to a lowercase "a" with a cyan dot in the lower-right quadrant — a compressed ".io" for avatars, app icons and favicons.',
+    'bk.s2.label': 'Logo Files',
+    'bk.a1': 'Primary — for dark backgrounds',
+    'bk.a2': 'For light backgrounds — Ink + Cyan Deep',
+    'bk.a3': 'Single color — stamps, engraving, print',
+    'bk.a4': 'Rounded-square monogram · 512px',
+    'bk.a5': 'Circular monogram — social profiles',
+    'bk.a6': 'Browser tab + Apple touch icon',
+    'bk.s3.label': 'Color',
+    'bk.s3.hint': 'Click any swatch to copy its hex value.',
+    'bk.c1': 'Background — the canvas',
+    'bk.c2': 'Primary text on dark',
+    'bk.c3': '".io" · data & trust',
+    'bk.c4': '".io" on light backgrounds',
+    'bk.c5': 'Value · product/web only — never in the logo',
+    'bk.s4.label': 'Typography',
+    'bk.t1': 'Logo & display headlines. Weight 500 for the mark — never heavier.',
+    'bk.t2s': 'Data stays sovereign. Value moves freely.',
+    'bk.t2': 'Body copy and UI text.',
+    'bk.t3': 'Labels, eyebrows and data. All three families are on Google Fonts.',
+    'bk.s5.label': 'Rules',
+    'bk.r1': 'Lowercase only, weight 500. Color only the ".io" — Signal Cyan on dark, Cyan Deep on light.',
+    'bk.r2': 'Minimum sizes: wordmark 14px cap height; favicon 16px.',
+    'bk.r3': 'Never color the whole word. Never use Value Amber in the logo.',
+    'bk.r4': 'Never stretch, no glow, no shadow, no outline, no weights above 500.'
   },
 
   zh: {
@@ -265,8 +299,42 @@ const i18n = {
 
     'foot.tagline': '面向物理世界的数据主权基础设施',
     'foot.thesis': '完整论点',
+    'foot.brand': '品牌资源',
     'foot.top': '↑ 回到顶部',
-    'art.back': '← 返回 aitos.io'
+    'art.back': '← 返回 aitos.io',
+
+    'bk.eyebrow': '品牌资源 · 字标系统 V2.0 · 2026',
+    'bk.title': '文字，<span class="cy">即</span>品牌。',
+    'bk.sub': '零图形装饰。小写 Unbounded、唯一一处青色点缀，仅此而已。数据保有主权，价值自由流动。',
+    'bk.download': '下载全部资源（.ZIP）',
+    'bk.download2': '下载品牌资源包',
+    'bk.s1.label': '字标',
+    'bk.s1.d1': '字标即完整识别系统：小写 "aitos.io"，Unbounded Medium 字重。唯一的设计动作是把 ".io" 染成信号青——它是物理世界与数字世界之间的接口，以数据之色呈现。',
+    'bk.s1.d2': '字符标志（monogram）将字标浓缩为一个小写 "a" 加右下角一枚青色圆点——一个压缩版的 ".io"，用于头像、应用图标和 favicon。',
+    'bk.s2.label': '标志文件',
+    'bk.a1': '主版本——用于深色背景',
+    'bk.a2': '浅色背景版——Ink + 深青',
+    'bk.a3': '单色版——印章、雕刻、印刷',
+    'bk.a4': '圆角方形字符标志 · 512px',
+    'bk.a5': '圆形字符标志——社交媒体头像',
+    'bk.a6': '浏览器标签页 + Apple 触屏图标',
+    'bk.s3.label': '色彩',
+    'bk.s3.hint': '点击任意色块即可复制其 HEX 色值。',
+    'bk.c1': '背景色——整个画布',
+    'bk.c2': '深色背景上的主文字色',
+    'bk.c3': '".io" · 数据与信任',
+    'bk.c4': '浅色背景上的 ".io"',
+    'bk.c5': '价值 · 仅用于产品/网页——绝不进入标志',
+    'bk.s4.label': '字体',
+    'bk.t1': '标志与展示型标题。字标固定 500 字重——不可更粗。',
+    'bk.t2s': '数据保有主权，价值自由流动。',
+    'bk.t2': '正文与界面文字。',
+    'bk.t3': '标签、眉题与数据。三套字体均来自 Google Fonts。',
+    'bk.s5.label': '使用规则',
+    'bk.r1': '仅用小写，字重 500。只给 ".io" 上色——深色背景用信号青，浅色背景用深青。',
+    'bk.r2': '最小尺寸：字标大写字高 14px；favicon 16px。',
+    'bk.r3': '绝不给整个单词上色，绝不在标志中使用琥珀色。',
+    'bk.r4': '绝不拉伸变形；不加辉光、阴影、描边；不使用超过 500 的字重。'
   }
 };
 
@@ -314,6 +382,23 @@ const C_VALUE = hexToRgb('ffb454');
 function motionFactor() {
   return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0.35 : 1;
 }
+
+// ---------- brand kit: click-to-copy hex swatches ----------
+document.querySelectorAll('.bk-swatch').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const hex = btn.getAttribute('data-hex');
+    const hexEl = btn.querySelector('.bk-swatch-hex');
+    const write = navigator.clipboard
+      ? navigator.clipboard.writeText(hex)
+      : Promise.reject();
+    write.then(() => {
+      const original = hexEl.textContent;
+      hexEl.textContent = 'copied ✓';
+      btn.classList.add('copied');
+      setTimeout(() => { hexEl.textContent = original; btn.classList.remove('copied'); }, 1200);
+    }).catch(() => {});
+  });
+});
 
 // ---------- year ----------
 const yearEl = document.getElementById('year');
